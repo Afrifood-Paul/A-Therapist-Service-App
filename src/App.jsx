@@ -24,18 +24,18 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />}></Route>
-      <Route path="homepagetwo" element={<HomePageTwo />}></Route>
-      <Route path="homepagethree" element={<HomePageThree />}></Route>
-      <Route path="homepagefour" element={<HomePageFour />}></Route>
-      <Route path="Services" element={<Services />}></Route>
-      <Route path="Servicestwo" element={<ServicesTwo />}></Route>
-      <Route path="Servicesthree" element={<ServicesThree />}></Route>
-      <Route path="ServicesSingle" element={<ServicesSingle />}></Route>
-      <Route path="Studycase" element={<StudyCase />}></Route>
-      <Route path="aboutus" element={<AboutUs />}></Route>
-      <Route path="blog" element={<Blog />}></Route>
-      <Route path="contact" element={<ContactUs />}></Route>
-      <Route path="appointment" element={<Appointment />}></Route>
+      <Route path="homepagetwo" element={<HomePageTwo />} />
+      <Route path="homepagethree" element={<HomePageThree />} />
+      <Route path="homepagefour" element={<HomePageFour />} />
+      <Route path="Services" element={<Services />} />
+      <Route path="Servicestwo" element={<ServicesTwo />} />
+      <Route path="Servicesthree" element={<ServicesThree />} />
+      <Route path="ServicesSingle" element={<ServicesSingle />} />
+      <Route path="Studycase" element={<StudyCase />} />
+      <Route path="aboutus" element={<AboutUs />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="contact" element={<ContactUs />} />
+      <Route path="appointment" element={<Appointment />} />
     </>
   )
 );
