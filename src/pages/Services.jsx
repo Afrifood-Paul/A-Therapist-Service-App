@@ -1,9 +1,13 @@
 import React from "react";
+import Navbar from "../components/Navbar"
 
 const Services = () => {
   return (
     <div>
-      <h1 className=" text-black text-center">
+      <div className="justify-evenly items-center">
+        <Navbar />
+      </div>
+      <h1 className=" text-black text-center bg-green-700 w-full">
         This Services Page
       </h1>
     </div>
