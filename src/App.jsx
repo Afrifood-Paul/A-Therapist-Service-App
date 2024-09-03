@@ -23,7 +23,7 @@ import Appointment from "./pages/Appointment";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Home />} />
       <Route path="homepagetwo" element={<HomePageTwo />} />
       <Route path="homepagethree" element={<HomePageThree />} />
       <Route path="homepagefour" element={<HomePageFour />} />
