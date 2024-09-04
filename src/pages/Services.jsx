@@ -1,16 +1,18 @@
-import React from "react";
-import Navbar from "../components/Navbar"
+import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
+import ServicesSection from "../Services-Component/Service-Card-Section";
+import Header from "../Services-Component/Services-header";
+import PricingComponent from "../Services-Component/Services-pricingComponent";
+import ServiceContactFooter from "../Services-Component/serviceContact3";
 
 const Services = () => {
   return (
-    <div>
-      <div className="justify-evenly items-center">
-        <Navbar />
-      </div>
-      <h1 className=" text-black text-center bg-green-700 w-full">
-        This Services Page
-      </h1>
-    </div>
+    <>
+      <Header />
+      <ServicesSection />
+      <PricingComponent />
+      <FAQAndContactSection />
+      <ServiceContactFooter />
+    </>
   );
 };
 
