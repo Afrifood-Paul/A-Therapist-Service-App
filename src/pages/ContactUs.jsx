@@ -48,6 +48,7 @@ const Contact = () => {
                 alt=""
                 className="rounded-xl w-full object-cover"
               />
+
               <p className="absolute bottom-0 left-20 lg:left-14 py-2 text-white font-medium">
                 Mon - Fri 08.00 - 18.00
               </p>

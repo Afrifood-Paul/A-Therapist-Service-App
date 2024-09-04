@@ -13,6 +13,45 @@ import cardpic from "../assets/cardpic.jpg";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
 const Blog = () => {
+  const articles = [
+    {
+      image: img1,
+      title: "The Power of Positive Thinking",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+    {
+      image: img2,
+      title: "Understanding the Roots of Anxiety",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+    {
+      image: img3,
+      title: "The Psychology of Procrastination",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+    {
+      image: img4,
+      title: "Stress Management Techniques",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+    {
+      image: img5,
+      title: "The Psychology of Resilience",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+    {
+      image: img6,
+      title: "The Secrets to a Fulfilling Life",
+      description:
+        "Dolore officia sint incididunt non excepteur ea mollit commodo ut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
+    },
+  ];
+
   return (
     <section>
       <div className="sticky top-0 w-full z-30 bg-white">
@@ -34,22 +73,23 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="w-[80%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-20 gap-5">
-        {[img1, img2, img3, img4, img5, img6].map((image, index) => (
-          <article key={index} className="flex flex-col">
+      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-20 gap-5">
+        {articles.map((article, index) => (
+          <article key={index} className="flex flex-col relative">
             <img
-              src={image}
+              src={article.image}
               alt={`Image ${index + 1}`}
               className="w-full h-[15rem] rounded-xl object-cover object-center"
             />
+            <div className="absolute top-3 right-3">
+              <p className="capitalize bg-[#83cc61] text-white px-3 py-1 font-semibold text-sm rounded-md">
+                Tips & tricks
+              </p>
+            </div>
             <div className="py-4 text-left flex-grow">
-              <h1 className="text-md font-medium">
-                The Power of Positive Thinking
-              </h1>
+              <h1 className="text-md font-medium">{article.title}</h1>
               <p className="text-sm leading-7 text-gray-500 pt-2">
-                Dolore officia sint incididunt non excepteur ea mollit commodo
-                ut enim reprehenderit cupidatat labore ad laborum consectetur
-                consequat...
+                {article.description}
               </p>
             </div>
             <div className="bg-gray-200 bg-opacity-50 flex items-center py-2 px-3 rounded-xl gap-3">
@@ -69,7 +109,7 @@ const Blog = () => {
               </div>
             </div>
           </article>
-       ))}
+        ))}
       </div>
 
       <Footer />

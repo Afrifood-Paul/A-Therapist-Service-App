@@ -57,7 +57,7 @@ const TeamSection = () => {
   return (
     <section className="py-10 relative">
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <div className="bg-[#d9f6e0] inline-block px-4 py-1 text-sm rounded-full text-gray-800 mb-4">
+        <div className="bg-[#d9f6e0] inline-block px-4 py-1 text-sm font-sans font-semibold rounded-full text-gray-800 mb-4">
           We have best Team
         </div>
         <h2 className="text-4xl font-semibold">

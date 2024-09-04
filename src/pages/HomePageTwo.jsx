@@ -1,13 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import bg4 from "../assets/bg4.webp";
+import bg3 from "../assets/bg3.webp";
 import bushes from "../assets/bushes.webp";
-import { FaMapMarkedAlt, FaPhoneAlt, FaPlay } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
+import jaffery from "../assets/jaffery2.webp";
 import { LuClock9, LuPhoneCall } from "react-icons/lu";
 import { SlLocationPin } from "react-icons/sl";
 import CountUp from "react-countup";
 import TeamSection from "../components/Sections/TeamSection";
 import Footer from "../components/Footer";
+import HowItWorks from "../components/Sections/HowItWorks";
 
 const HomePageTwo = () => {
   return (
@@ -39,7 +42,7 @@ const HomePageTwo = () => {
               nostrud culpa eu culpa commodo velit in ad cupidatat laboris in ut
               sit.
             </p>
-            <button className="mt-6 bg-[#5a9e7c] hover:bg-green-600 text-white py-2 px-5 rounded-full text-lg">
+            <button className="mt-6 bg-[#5a9e7c] hover:bg-green-600 text-white py-2 px-5 rounded-full text-sm font-sans">
               Our Services
             </button>
           </div>
@@ -153,8 +156,46 @@ const HomePageTwo = () => {
             </div>
           </div>
         </section>
-        <TeamSection />
-        <Footer />
+        <div>
+          <TeamSection />
+          <HowItWorks />
+          <section>
+            <div
+              className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] bg-fixed"
+              style={{ backgroundImage: `url(${bushes})` }}
+            >
+              {/* Content Container */}
+              <div className="relative z-10 flex items-center justify-center h-full text-center text-white p-4">
+                <div className="flex flex-col md:flex-row md:items-center md:space-x-10 max-w-4xl mx-auto">
+                  {/* Profile Image */}
+                  <div className="flex flex-col justify-center md:block my-10 md:mb-0">
+                    <img
+                      src={jaffery}
+                      alt="Jeffery Mussman"
+                      className="lg:w-full w-66 lg:h-full rounded-full shadow-lg lg:bg-cover"
+                    />
+                    <div className="py-2">
+                      <p className="text-sm font-bold pb-2">Jeffery Mussman</p>
+                      <p className="text-xs">Individual Therapy</p>
+                    </div>
+                  </div>
+
+                  {/* Text Content */}
+                  <div>
+                    <p className="text-3xl leading-10 w-[90%] lg:w-full text-left md:text-xl lg:text-3xl font-semibold">
+                      <span className="text-[#83cc61]">Mindthera</span> is exceptional! Their
+                      psychologists are highly professional and caring. The
+                      atmosphere is welcoming and calming, and the staff
+                      provides outstanding support. Thank you, Mindthera, for
+                      your excellent service!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <Footer />
+        </div>
       </div>
     </div>
   );
