@@ -4,12 +4,18 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        greatvibes:['Great Vibes','cursive'],
-        quickstand:["Quicksand", 'sans-serif'],
-        poppins:["Poppins", 'sans-serif'],
-        bigelow:["Bigelow Rules", "system-ui"],
-        roboto:["Roboto", "sans-serif"]
-      }
+        sans: ["Jost", "Helvetica", "Arial", "sans-serif"],
+        san: ['Inter', 'sans-serif'],
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
+      animation: {
+        float: "float 3s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

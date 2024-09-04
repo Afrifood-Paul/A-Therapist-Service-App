@@ -24,21 +24,22 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />} />
-      <Route path="homepagetwo" element={<HomePageTwo />} />
-      <Route path="homepagethree" element={<HomePageThree />} />
-      <Route path="homepagefour" element={<HomePageFour />} />
-      <Route path="Services" element={<Services />} />
-      <Route path="Servicestwo" element={<ServicesTwo />} />
-      <Route path="Servicesthree" element={<ServicesThree />} />
-      <Route path="ServicesSingle" element={<ServicesSingle />} />
-      <Route path="Studycase" element={<StudyCase />} />
-      <Route path="aboutus" element={<AboutUs />} />
+      <Route path="home-page-two" element={<HomePageTwo />} />
+      <Route path="home-page-three" element={<HomePageThree />} />
+      <Route path="home-page-four" element={<HomePageFour />} />
+      <Route path="services" element={<Services />} />
+      <Route path="services-two" element={<ServicesTwo />} />
+      <Route path="services-three" element={<ServicesThree />} />
+      <Route path="services-single" element={<ServicesSingle />} />
+      <Route path="study-case" element={<StudyCase />} />
+      <Route path="about-us" element={<AboutUs />} />
       <Route path="blog" element={<Blog />} />
-      <Route path="contact" element={<ContactUs />} />
+      <Route path="contact-us" element={<ContactUs />} />
       <Route path="appointment" element={<Appointment />} />
     </>
   )
 );
+
 
 const App = () => <RouterProvider router={router} />;
 
