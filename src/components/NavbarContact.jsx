@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/open-minded.jpg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { MdHeadsetMic, MdOutlineMenu } from "react-icons/md";
-import Dropdown from "./Dropdown";
 
-const Navbar = () => {
+import DropdownContact from "./DropdownContact";
+
+const NavbarContact = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isHomeDropdownOpen, setIsHomeDropdownOpen] = useState(false);
   const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
@@ -44,11 +45,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header
-      className={`py-2 shadow-md transition-colors duration-300  ${
-        isScrolled ? "bg-white" : "bg-inherit"
-      }`}
-    >
+    <header className="py-2 shadow-md transition-colors duration-300">
       <div className="w-[95%] lg:w-full xl:w-[80%] mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -57,14 +54,14 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className={`hidden lg:flex space-x-6`}>
-          <Dropdown
+          <DropdownContact
             label="Home"
             items={homeDropdownItems}
             isOpen={isHomeDropdownOpen}
             toggleDropdown={() => setIsHomeDropdownOpen(!isHomeDropdownOpen)}
             isScrolled={isScrolled}
           />
-          <Dropdown
+          <DropdownContact
             label="Services"
             items={serviceDropdownItems}
             isOpen={isServiceDropdownOpen}
@@ -73,11 +70,7 @@ const Navbar = () => {
             }
             isScrolled={isScrolled}
           />
-          <div
-            className={`space-x-6 font-sans ${
-              isScrolled ? "text-black lg:text-black" : " lg:text-white"
-            }`}
-          >
+          <div className={`space-x-6 font-sans`}>
             <NavLink className="text-sm font-semibold">About Us</NavLink>
             <NavLink className="text-sm font-semibold">Study Case</NavLink>
             <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
@@ -91,11 +84,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-1">
             <MdHeadsetMic className=" lg:text-3xl xl:text-5xl text-green-500" />
-            <div
-              className={`flex flex-col items-center ${
-                isScrolled ? "text-black lg:text-black" : "lg:text-white"
-              }`}
-            >
+            <div className={`flex flex-col items-center `}>
               <p className="text-xs">Need Help?</p>
               <p className="font-bold">+929 333 9296</p>
             </div>
@@ -123,13 +112,13 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
         <nav className="lg:hidden w-full h-[85vh] mt-2 bg-[#222] text-white">
-          <Dropdown
+          <DropdownContact
             label="Home"
             items={homeDropdownItems}
             isOpen={isHomeDropdownOpen}
             toggleDropdown={() => setIsHomeDropdownOpen(!isHomeDropdownOpen)}
           />
-          <Dropdown
+          <DropdownContact
             label="Services"
             items={serviceDropdownItems}
             isOpen={isServiceDropdownOpen}
@@ -155,4 +144,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarContact;

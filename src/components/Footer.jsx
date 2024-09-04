@@ -7,14 +7,15 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import logo from "../assets/open-minded.jpg";
+import contactFlower from "../assets/flowers-crop-3.webp";
 import { ImLocation } from "react-icons/im";
 import { FaMessage } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[whitesmoke] pt-12">
-      <div className="w-[90%] mx-auto text-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <footer className="bg-[#f6f8f9] pt-12 relative">
+      <div className="w-[90%] mx-auto lg:w-[80%] lg:ms-16 text-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {/* Logo and Description */}
         <div className="lg:w-[80%] mb-8 lg:mb-0 col-span-2">
           <img src={logo} alt="Logo" className="mb-4" width={150} />
@@ -121,6 +122,9 @@ const Footer = () => {
             <h2>Privacy Policy</h2>
           </div>
         </div>
+      </div>
+      <div>
+        <img src={contactFlower} alt="" className="w-60 absolute top-0 right-0"/>
       </div>
     </footer>
   );
