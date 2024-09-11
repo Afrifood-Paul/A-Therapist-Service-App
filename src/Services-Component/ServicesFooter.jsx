@@ -1,4 +1,5 @@
 import { Clock, MapPin} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const ServiceFooter = () => {
   return (
@@ -11,9 +12,11 @@ export const ServiceFooter = () => {
             <p>Mon - Sat: 8AM - 9PM</p>
             <p>Sunday: 10AM - 8PM</p>
           </div>
+        <Link to="/appointment">
           <button className="bg-[#457a60] text-sm text-white px-3 py-2 rounded-full font-medium hover:bg-[#284838] transition-colors duration-500">
             Make Appointment
           </button>
+        </Link>
         </div>
         <div className="flex flex-col items-center justify-center px-6 py-8 bg-[#83cc61] text-white text-center">
           <MapPin className="mb-4 text-3xl" />

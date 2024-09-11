@@ -37,9 +37,9 @@ const NavbarContact = () => {
   ];
 
   const serviceDropdownItems = [
-    { label: "Service Style 1", path: "/service-1" },
-    { label: "Service Style 2", path: "/service-2" },
-    { label: "Service Style 3", path: "/service-3" },
+    { label: "Service Style 1", path: "/services" },
+    { label: "Service Style 2", path: "/services-two" },
+    { label: "Service Style 3", path: "/services-three" },
     { label: "Service Single", path: "/service-single" },
     { label: "Appointment", path: "/appointment" },
   ];
@@ -71,8 +71,8 @@ const NavbarContact = () => {
             isScrolled={isScrolled}
           />
           <div className={`space-x-6 font-sans`}>
-            <NavLink className="text-sm font-semibold">About Us</NavLink>
-            <NavLink className="text-sm font-semibold">Study Case</NavLink>
+            <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
+            <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
             <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
             <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
@@ -83,13 +83,13 @@ const NavbarContact = () => {
         {/* Contact Info */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-1">
-            <MdHeadsetMic className=" lg:text-3xl xl:text-5xl text-green-500" />
+            <MdHeadsetMic className=" lg:text-3xl xl:text-5xl text-[#5a9e7c]" />
             <div className={`flex flex-col items-center `}>
               <p className="text-xs">Need Help?</p>
               <p className="font-bold">+929 333 9296</p>
             </div>
           </div>
-          <NavLink className="bg-[#02bc5f] text-sm  text-white px-6 py-3 rounded-full hover:bg-green-600">
+          <NavLink to="/appointment" className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold">
             Make Appointment
           </NavLink>
         </div>
@@ -100,7 +100,7 @@ const NavbarContact = () => {
             <MdHeadsetMic className="text-3xl text-green-500" />
             <div className="flex flex-col items-center">
               <p className="text-xs">Need Help?</p>
-              <p className="font-bold">+929 333 9296</p>
+              <p className="font-bold">+780 884 1985</p>
             </div>
           </div>
           <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>

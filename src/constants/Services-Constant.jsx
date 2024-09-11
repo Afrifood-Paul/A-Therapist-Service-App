@@ -4,10 +4,7 @@ import CareerCou from '../assets/Career couseling.webp'
 import StressM from '../assets/Stress M.webp'
 import AT from '../assets/Anxiety.webp'
 import DT from '../assets/depression therapy.webp'
-import psychologist1 from '../assets/JM.webp'
-import psychologist2 from '../assets/SJ.webp'
-import psychologist3 from '../assets/NA.webp'
-import psychologist4 from '../assets/MT.webp'
+
 
 
 export const services = [
@@ -107,46 +104,4 @@ export const cardData = [
         content: "Throughout the therapy process, the therapist and client regularly review progress towards the established goals. Adjustments to the treatment plan may be made based on the client's evolving needs and progress"
     }
 
-];
- export const PsychologistsData = [
-    {
-        name: 'Jeffery Mussman',
-        role: 'Psychologist',
-        image: psychologist1,
-        social: {
-            facebook: 'https://facebook.com',
-            twitter: 'https://twitter.com',
-            instagram: 'https://instagram.com',
-        },
-    },
-    {
-        name: 'Sophia Jenkins',
-        role: 'Psychologist',
-        image: psychologist2,
-        social: {
-            facebook: 'https://facebook.com',
-            twitter: 'https://twitter.com',
-            instagram: 'https://instagram.com',
-        },
-    },
-    {
-        name: 'Melissa Taylor',
-        role: 'Psychologist',
-        image: psychologist3,
-        social: {
-            facebook: 'https://facebook.com',
-            twitter: 'https://twitter.com',
-            instagram: 'https://instagram.com',
-        },
-    },
-    {
-        name: 'Noah Anderson',
-        role: 'Psychologist',
-        image: psychologist4,
-        social: {
-            facebook: 'https://facebook.com',
-            twitter: 'https://twitter.com',
-            instagram: 'https://instagram.com',
-        },
-    },
 ];

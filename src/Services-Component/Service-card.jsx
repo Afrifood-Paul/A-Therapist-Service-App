@@ -8,7 +8,7 @@ const ServiceCard = ({ title, description, image, number }) => {
       </div>
       <span className="absolute top-4 font-greatvibes right-4 text-2xl italic text-[#83cc61]">{number}</span>
       <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-      <p className="text-gray-500 mt-2 mb-4">{description}</p>
+      <p className="text-gray-500 text-sm font-poppins mt-2 mb-4">{description}</p>
       <button className="bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
         Read More
       </button>

@@ -1,6 +1,7 @@
 import { services } from "../constants/Services-Constant";
 import ServiceFooter from "../Services-Component/ServicesFooter";
-
+import NavbarContact from "../components/NavbarContact";
+import Footer from "../components/Footer";
 import Flower from '../assets/flowers-crop-3-white.webp'
 import Header from "../Services-Component/Services-header";
 
@@ -52,9 +53,13 @@ const ServicesList = () => {
 const ServicesThree = () => {
   return (
     <>
+      <div className="fixed bg-white top-0 w-full z-30">
+       <NavbarContact />
+      </div>
       <Header />
       <ServicesList />
       <ServiceFooter />
+      <Footer />
     </>
   );
 };

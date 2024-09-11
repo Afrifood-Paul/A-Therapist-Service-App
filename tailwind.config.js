@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ["Jost", "Helvetica", "Arial", "sans-serif"],
         san: ['Inter', 'sans-serif'],
+        poppins:["Poppins", 'sans-serif']
       },
       keyframes: {
         float: {

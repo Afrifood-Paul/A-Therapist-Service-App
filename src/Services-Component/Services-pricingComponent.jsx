@@ -6,7 +6,7 @@ import backgroundImage from "../assets/1.webp";
 const PricingComponent =() =>{
   return (
     <div className="min-h-screen relative">
-      <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage:`url(${backgroundImage})`}}></div>
+      <div className="absolute  bg-fixed  inset-0 bg-cover bg-center" style={{backgroundImage:`url(${backgroundImage})`}}></div>
       <div className="relative z-10">
         <header className="text-white py-20">
           <div className="container mx-auto text-center">
@@ -15,7 +15,7 @@ const PricingComponent =() =>{
           </div>
         </header>
         <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-5 ">
             {pricingPlans.map((plan, index) => (
               <PricingCard key={index} {...plan} />
             ))}
