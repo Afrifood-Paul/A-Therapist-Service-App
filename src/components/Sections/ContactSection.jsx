@@ -46,7 +46,7 @@ const ContactSection = () => {
         <div>
           <Link
             to="/appointment"
-            className="bg-green-500 text-white rounded-full px-6 py-2 text-lg font-semibold"
+            className="bg-[#83cc61] text-white rounded-full px-6 py-3 font-sans text-sm "
           >
             Make Appointment
           </Link>
@@ -58,7 +58,7 @@ const ContactSection = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative w-[50%]"
+            className="relative lg:w-[50%]"
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >

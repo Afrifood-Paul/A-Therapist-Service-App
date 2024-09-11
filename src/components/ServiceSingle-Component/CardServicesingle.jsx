@@ -14,7 +14,7 @@ function CardContent({ title, content }) {
         function Card() {
              return (
         <div
-            className="relative min-h-screen bg-cover bg-center flex justify-center items-center"
+            className="relative min-h-screen bg-cover bg-center bg-fixed flex justify-center items-center"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             {/* Content Cards */}

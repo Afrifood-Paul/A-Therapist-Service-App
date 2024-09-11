@@ -11,6 +11,9 @@ import CountUp from "react-countup";
 import TeamSection from "../components/Sections/TeamSection";
 import Footer from "../components/Footer";
 import HowItWorks from "../components/Sections/HowItWorks";
+import MentalHealthTransfom from "./MentalHealthTransfom";
+import OurPackage from "../components/Sections/OurPackages";
+import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
 
 const HomePageTwo = () => {
   return (
@@ -125,6 +128,7 @@ const HomePageTwo = () => {
             </button>
           </div>
         </section>
+        <MentalHealthTransfom />
         <section
           className="w-full bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${bushes})` }}
@@ -158,7 +162,9 @@ const HomePageTwo = () => {
         </section>
         <div>
           <TeamSection />
+          <OurPackage />
           <HowItWorks />
+          <FAQAndContactSection />
           <section>
             <div
               className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] bg-fixed"
@@ -183,11 +189,11 @@ const HomePageTwo = () => {
                   {/* Text Content */}
                   <div>
                     <p className="text-3xl leading-10 w-[90%] lg:w-full text-left md:text-xl lg:text-3xl font-semibold">
-                      <span className="text-[#83cc61]">Mindthera</span> is exceptional! Their
-                      psychologists are highly professional and caring. The
-                      atmosphere is welcoming and calming, and the staff
-                      provides outstanding support. Thank you, Mindthera, for
-                      your excellent service!
+                      <span className="text-[#83cc61]">Mindthera</span> is
+                      exceptional! Their psychologists are highly professional
+                      and caring. The atmosphere is welcoming and calming, and
+                      the staff provides outstanding support. Thank you,
+                      Mindthera, for your excellent service!
                     </p>
                   </div>
                 </div>

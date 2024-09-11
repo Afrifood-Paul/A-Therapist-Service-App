@@ -28,8 +28,8 @@ const router = createBrowserRouter(
       <Route path="homepagethree" element={<HomePageThree />} />
       <Route path="homepagefour" element={<HomePageFour />} />
       <Route path="Services" element={<Services />} />
-      <Route path="Servicestwo" element={<ServicesTwo />} />
-      <Route path="Servicesthree" element={<ServicesThree />} />
+      <Route path="ServicesTwo" element={<ServicesTwo />} />
+      <Route path="ServicesThree" element={<ServicesThree />} />
       <Route path="ServicesSingle" element={<ServicesSingle />} />
       <Route path="Studycase" element={<StudyCase />} />
       <Route path="aboutus" element={<AboutUs />} />
