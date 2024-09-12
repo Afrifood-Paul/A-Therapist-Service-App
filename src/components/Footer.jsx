@@ -136,7 +136,7 @@ const Footer = () => {
       <div className="border-t border-gray-300 mt-5 py-5">
         <div className="w-[90%] mx-auto flex flex-col lg:flex-row gap-3 items-center justify-between">
           <div className="text-gray-500 text-sm font-medium text-center lg:text-left">
-            <p>Copyright 2024 - Open-Minded Service Center</p>
+            <p>Copyright 2024 - Open-Minded Service Center-Developed by Placid</p>
           </div>
           <div className="flex gap-5 items-center text-gray-500 text-sm font-medium">
             <h2>Terms & Conditions</h2>
