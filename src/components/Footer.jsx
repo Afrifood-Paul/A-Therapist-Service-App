@@ -24,11 +24,7 @@ const Footer = () => {
         <div className="lg:w-[80%] mb-8 lg:mb-0 col-span-2">
           <img src={logo} alt="Logo" className="mb-4" width={150} />
           <p className="text-gray-500 font-san leading-8">
-<<<<<<< HEAD
-            At Open-minded, we understand that life’s challenges can sometimes
-=======
             At Open-Minded, we understand that life’s challenges can sometimes
->>>>>>> origin/main
             feel overwhelming, and seeking support can be a daunting step.
             That’s why our team of dedicated therapists is here to provide you
             with the compassionate guidance and expert care you deserve.
@@ -140,11 +136,7 @@ const Footer = () => {
       <div className="border-t border-gray-300 mt-5 py-5">
         <div className="w-[90%] mx-auto flex flex-col lg:flex-row gap-3 items-center justify-between">
           <div className="text-gray-500 text-sm font-medium text-center lg:text-left">
-<<<<<<< HEAD
-            <p>Copyright 2024 - Openminded</p>
-=======
             <p>Copyright 2024 - Open-Minded Service Center</p>
->>>>>>> origin/main
           </div>
           <div className="flex gap-5 items-center text-gray-500 text-sm font-medium">
             <h2>Terms & Conditions</h2>
