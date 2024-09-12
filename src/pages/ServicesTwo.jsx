@@ -1,15 +1,15 @@
-
-import Flower from '../assets/flowers-crop-3-white.webp'
+import Flower from "../assets/flowers-crop-3-white.webp";
 import Header from "../Services-Component/Services-header";
 import Footer from '../components/Footer'
 import NavbarContact from "../components/NavbarContact";
 import { services } from "../constants/Services-Constant";
-import ServiceFooter from '../Services-Component/ServicesFooter';
+import ServiceFooter from "../Services-Component/ServicesFooter";
+import NavbarContact from "../components/NavbarContact";
+import Footer from "../components/Footer";
 
 const CounselingCard = ({ title, description, image }) => {
   return (
     <div>
-
       <div className="relative group overflow-hidden rounded-lg shadow-md bg-white">
         <div className="relative">
           <img src={image} alt={title} className="w-full h-80 object-cover" />
@@ -23,46 +23,57 @@ const CounselingCard = ({ title, description, image }) => {
           </div>
         </div>
       </div>
-        <div className="p-5">
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-gray-400 font-semibold text-sm">{description}</p>
-        </div>
+      <div className="p-5">
+        <h3 className="text-xl font-semibold">{title}</h3>
+        <p className="text-gray-400 font-semibold text-sm">{description}</p>
+      </div>
     </div>
-    
-
   );
 };
 
 const CounselingServicesGrid = () => {
   return (
-    <div className=" mx-auto m-8 py-16 px-4">
-          <div className="text-center mb-12 relative z-10">
-            <span className="inline-block bg-[#e1ffd4] text-[#2f5b1b] text-sm font-bold px-4 py-2 rounded-full mb-4">
-              Our Services
-            </span>
-            <h2 className="text-3xl font-bold text-gray-800">Therapist&  
-              <span className=" font-greatvibes font-semibold text-[#b7e576]"> Treatments</span>
-            </h2>
-          </div>
+    <div className="w-[80%] mx-auto m-8 py-16 px-4">
+      <div className="text-center mb-12 relative z-10">
+        <span className="inline-block bg-[#e1ffd4] text-[#2f5b1b] text-sm font-bold px-4 py-2 rounded-full mb-4">
+          Our Services
+        </span>
+        <h2 className="text-3xl font-bold text-gray-800">
+          Therapist&
+          <span className=" font-greatvibes font-semibold text-[#b7e576]">
+            {" "}
+            Treatments
+          </span>
+        </h2>
+      </div>
 
-          <div className="grid mx-5 my-3  grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <CounselingCard key={index} {...service} />
-            ))}
-          </div>
-  </div>
+      <div className="grid mx-5 my-3  grid-cols-1 md:grid-cols-3 gap-6">
+        {services.map((service, index) => (
+          <CounselingCard key={index} {...service} />
+        ))}
+      </div>
+    </div>
   );
 };
 const ServicesTwo = () => {
   return (
     <>
+<<<<<<< HEAD
       <div className="fixed bg-white top-0 w-full z-30">
        <NavbarContact />
+=======
+      <div className="sticky top-0 w-full z-30 bg-white">
+        <NavbarContact />
+>>>>>>> origin/main
       </div>
       <Header />
       <CounselingServicesGrid />
       <ServiceFooter />
+<<<<<<< HEAD
       <Footer/>
+=======
+      <Footer />
+>>>>>>> origin/main
     </>
   );
 };

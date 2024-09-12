@@ -56,7 +56,7 @@ export const  pricingPlans = [
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
-      title: "Couples Counseling",
+      title: 'Couples Counseling',
       price: 180,
       image: CC,
       description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',

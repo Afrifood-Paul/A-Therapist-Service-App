@@ -62,7 +62,7 @@ const AppointmentForm = () => {
             <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Select Service */}
               <div>
-                <label className="block text-gray-700 hover:bg-gray-500">Select Service</label>
+                <label className="block text-gray-700 ">Select Service</label>
                 <select
                   required
                   name="service"
@@ -70,7 +70,7 @@ const AppointmentForm = () => {
                   onChange={handleInputChange}
                   className="w-full border bg-gray-100 rounded px-3 py-2"
                 >
-                  <option className='text-gray-400' value="">Select service</option>
+                  <option className='text-gray-400 hover:bg-gray-500' value="">Select service</option>
                   <option value="Individual Therapy">Individual Therapy</option>
                   <option value="Career Counseling">Career Counseling</option>
                   <option value="Couples Counseling">Couples Counseling</option>

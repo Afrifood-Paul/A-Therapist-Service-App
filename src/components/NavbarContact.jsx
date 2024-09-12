@@ -31,9 +31,9 @@ const NavbarContact = () => {
 
   const homeDropdownItems = [
     { label: "Home Page One", path: "/" },
-    { label: "Home Page Two", path: "/home-page-two" },
-    { label: "Home Page Three", path: "/home-page-three" },
-    { label: "Home Page Four", path: "/home-page-four" },
+    { label: "Home Page Two", path: "/homepagetwo" },
+    { label: "Home Page Three", path: "/homepagethree" },
+    { label: "Home Page Four", path: "/homepagefour" },
   ];
 
   const serviceDropdownItems = [
@@ -74,7 +74,7 @@ const NavbarContact = () => {
             <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
             <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
             <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
-            <NavLink to={"/contact-us"} className="text-sm font-semibold">
+            <NavLink to={"/contact"} className="text-sm font-semibold">
               Contact
             </NavLink>
           </div>
@@ -86,7 +86,7 @@ const NavbarContact = () => {
             <MdHeadsetMic className=" lg:text-3xl xl:text-5xl text-[#5a9e7c]" />
             <div className={`flex flex-col items-center `}>
               <p className="text-xs">Need Help?</p>
-              <p className="font-bold">+929 333 9296</p>
+              <p className="font-bold">+7808841985</p>
             </div>
           </div>
           <NavLink to="/appointment" className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold">
@@ -126,16 +126,16 @@ const NavbarContact = () => {
               setIsServiceDropdownOpen(!isServiceDropdownOpen)
             }
           />
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/aboutus"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             About Us
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/Studycase"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/contact"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Contact
           </NavLink>
         </nav>

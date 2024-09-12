@@ -46,7 +46,7 @@ const ContactSection = () => {
         <div>
           <Link
             to="/appointment"
-            className="bg-green-500 text-white rounded-full px-6 py-2 text-lg font-semibold"
+            className="bg-[#83cc61] text-white rounded-full px-6 py-3 font-sans text-sm "
           >
             Make Appointment
           </Link>
@@ -58,14 +58,14 @@ const ContactSection = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative w-full"
+            className="relative lg:w-[50%]"
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >
             <img
               src={image}
               alt={`Image ${index + 1}`}
-              className="object-cover hover:scale-125 duration-500"
+             className="object-cover hover:scale-110 duration-500"
             />
             <FaPlus
               className={`absolute top-[65%] left-[50%] transform -translate-x-1/2 text-white text-5xl transition-opacity duration-500 ${

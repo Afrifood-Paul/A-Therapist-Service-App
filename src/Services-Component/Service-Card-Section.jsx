@@ -9,7 +9,7 @@ const ServicesSection = () => {
         <div className="absolute top-0 left-0 w-1/4">
           <img src={Flower} alt="Decorative flower" className="w-full" />
         </div>
-        <div className="container mx-auto px-4">
+        <div className="w-[80%] mx-auto px-4">
           <div className="text-center mb-12 relative z-10">
             <span className="inline-block bg-[#e1ffd4] text-[#2f5b1b] text-sm font-bold px-4 py-2 rounded-full mb-4">
               Our Services

@@ -7,8 +7,8 @@ import {
   MdOutlineArrowBackIos,
 } from "react-icons/md";
 
-import bg1 from "../../assets/bg1.webp";
-import bg2 from "../../assets/bg2.webp";
+import bg1 from "../../assets/slider3.jpg";
+import bg2 from "../../assets/slider1.jpg";
 import FlowerCrop from "../../assets/flowers-crop1.webp";
 
 const NextArrow = ({ onClick }) => (
@@ -47,14 +47,16 @@ const Carousel = () => {
       id: 1,
       content: (
         <div
-          className="relative w-full h-screen bg-cover"
+          className="relative w-full h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${bg2})` }}
         >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="absolute lg:w-[70%] lg:mx-auto grid grid-cols-1 lg:grid-cols-2 inset-0 items-center lg:ps-10">
             <div className="hidden lg:block"></div>
             <div className=" px-5 lg:px-2 md:text-left">
               <p className="inline-block px-4 py-2 bg-gray-400 bg-opacity-50 rounded-full text-white text-sm md:text-lg lg:text-sm font-semibold">
-                Mindthera
+               Open-Minded
               </p>
               <div className="flex-flex-col">
                 <h2 className="text-5xl  md:text-6xl font-medium text-white py-4 lg:py-3">
@@ -84,20 +86,22 @@ const Carousel = () => {
             />
           </div>
         </div>
-      )
+      ),
     },
     {
       id: 2,
       content: (
         <div
-          className="relative w-full h-screen bg-cover"
+          className="relative w-full h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${bg1})` }}
         >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           <div className="absolute lg:w-[70%] lg:mx-auto grid grid-cols-1 lg:grid-cols-2 inset-0 items-center lg:ps-10">
             <div className="hidden lg:block"></div>
             <div className=" px-5 lg:px-2 md:text-left">
               <p className="inline-block px-4 py-2 bg-gray-400 bg-opacity-50 rounded-full text-white text-sm md:text-lg lg:text-sm font-semibold">
-                Mindthera
+                Open-Minded
               </p>
               <div className="flex-flex-col">
                 <h2 className="text-5xl  md:text-6xl font-medium text-white py-4 lg:py-3">

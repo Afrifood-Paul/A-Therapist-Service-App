@@ -1,6 +1,6 @@
 // src/components/Navbar.js
 import React, { useEffect, useState } from "react";
-import logo from "../assets/open-minded.jpg";
+import logo from "../assets/open-minded-logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import { MdHeadsetMic, MdOutlineMenu } from "react-icons/md";
 import Dropdown from "./Dropdown";
@@ -30,9 +30,9 @@ const Navbar = () => {
 
   const homeDropdownItems = [
     { label: "Home Page One", path: "/" },
-    { label: "Home Page Two", path: "/home-page-two" },
-    { label: "Home Page Three", path: "/home-page-three" },
-    { label: "Home Page Four", path: "/home-page-four" },
+    { label: "Home Page Two", path: "/homepageTwo" },
+    { label: "Home Page Three", path: "/homepageThree" },
+    { label: "Home Page Four", path: "/homepageFour" },
   ];
 
   const serviceDropdownItems = [
@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="w-[95%] lg:w-full xl:w-[80%] mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Open-Minded Logo" width={150} />
+          <img src={logo} alt="Open-Minded Logo" width={160} />
         </div>
 
         {/* Desktop Navigation */}
@@ -81,7 +81,7 @@ const Navbar = () => {
             <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
             <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
             <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
-            <NavLink to={"/contact-us"} className="text-sm font-semibold">
+            <NavLink to={"/contact"} className="text-sm font-semibold">
               Contact
             </NavLink>
           </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
               }`}
             >
               <p className="text-xs">Need Help?</p>
-              <p className="font-bold">+929 333 9296</p>
+              <p className="font-bold">+7808841985</p>
             </div>
           </div>
           <NavLink to="/appointment" className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold">
@@ -108,7 +108,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="lg:hidden flex gap-10 items-center">
           <div className="items-center space-x-1 hidden md:flex ">
-            <MdHeadsetMic className="text-3xl text-green-500" />
+            <MdHeadsetMic className="text-3xl text-[#83cc61]" />
             <div className="flex flex-col items-center">
               <p className="text-xs">Need Help?</p>
               <p className="font-bold">+780 884 1985</p>
@@ -137,16 +137,16 @@ const Navbar = () => {
               setIsServiceDropdownOpen(!isServiceDropdownOpen)
             }
           />
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/aboutus"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             About Us
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/Studycase"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
           </NavLink>
-          <NavLink className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/contact"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Contact
           </NavLink>
         </nav>
