@@ -4,8 +4,7 @@ import Footer from '../components/Footer'
 import NavbarContact from "../components/NavbarContact";
 import { services } from "../constants/Services-Constant";
 import ServiceFooter from "../Services-Component/ServicesFooter";
-import NavbarContact from "../components/NavbarContact";
-import Footer from "../components/Footer";
+
 
 const CounselingCard = ({ title, description, image }) => {
   return (
@@ -58,22 +57,13 @@ const CounselingServicesGrid = () => {
 const ServicesTwo = () => {
   return (
     <>
-<<<<<<< HEAD
       <div className="fixed bg-white top-0 w-full z-30">
        <NavbarContact />
-=======
-      <div className="sticky top-0 w-full z-30 bg-white">
-        <NavbarContact />
->>>>>>> origin/main
       </div>
       <Header />
       <CounselingServicesGrid />
       <ServiceFooter />
-<<<<<<< HEAD
       <Footer/>
-=======
-      <Footer />
->>>>>>> origin/main
     </>
   );
 };

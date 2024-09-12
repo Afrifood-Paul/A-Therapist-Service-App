@@ -5,6 +5,7 @@ import img3 from "../../assets/img3.webp";
 import img4 from "../../assets/img4.webp";
 import leaf from "../../assets/leaf.webp";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MentalPage2 = () => {
   return (
@@ -117,9 +118,11 @@ const MentalPage2 = () => {
             </div>
           </div>
         </div>
-        <button className="mt-4 xl:mt-6 px-4 py-2 bg-[#5a9e7c] text-white rounded-full">
-          About Us
-        </button>
+        <Link to ="/about-us">
+          <button className="mt-4 xl:mt-6 px-4 py-2 bg-[#5a9e7c] text-white rounded-full">
+            About Us
+          </button>
+        </Link>
       </div>
     </div>
   );

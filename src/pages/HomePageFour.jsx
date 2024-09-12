@@ -14,6 +14,7 @@ import TeamSection from "../components/Sections/TeamSection";
 import OurPackage from "../components/Sections/OurPackages";
 import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const HomePageFour = () => {
   return (
@@ -37,12 +38,16 @@ const HomePageFour = () => {
             with the compassionate guidance and expert care you deserve.
           </p>
           <div className="flex flex-col lg:flex-row gap-5 py-3">
+           <Link to ="/services">
             <button className="bg-green-500 text-white px-6 hover:shadow-xl py-3 rounded-2xl font-medium">
               Our Services
             </button>
+          </Link>
+          <Link to ="/appointment">
             <button className="bg-white text-green-600 px-6 hover:shadow-xl py-3 rounded-2xl font-medium">
               Make Appointment
             </button>
+          </Link>
           </div>
         </div>
       </div>

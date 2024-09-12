@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import NavbarContact from "../components/NavbarContact";
-=======
->>>>>>> origin/main
 import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
 import ServicesSection from "../Services-Component/Service-Card-Section";
 import Header from '../Services-Component/Services-header'
@@ -9,24 +5,17 @@ import Footer from '../components/Footer'
 import PricingComponent from "../Services-Component/Services-pricingComponent";
 import ServiceContactFooter from "../Services-Component/serviceContact3";
 import NavbarContact from "../components/NavbarContact";
-import Footer from "../components/Footer";
+
 
 
 const Services = () => {
   return (
     <>
-<<<<<<< HEAD
-      <div className="fixed bg-white top-0 w-full z-30">
-       <NavbarContact />
-      </div>
-       <Header />
-=======
       <div className="sticky top-0 w-full z-30 bg-white">
         <NavbarContact />
       </div>
 
       <Header />
->>>>>>> origin/main
       <ServicesSection />
       <PricingComponent />
       <FAQAndContactSection />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PricingCard = ({ title, price, image, description, features }) => {
   const titleBackgroundColors = {
@@ -50,9 +51,11 @@ const PricingCard = ({ title, price, image, description, features }) => {
             </li>
           ))}
         </ul>
-        <button className="w-full font-semibold bg-gray-100 text-gray-600 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
-          Make Appointment
-        </button>
+        <Link to="/appointment" >
+          <button className="w-full font-semibold bg-gray-100 text-gray-600 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
+            Make Appointment
+          </button>
+        </Link>
       </div>
     </div>
   );

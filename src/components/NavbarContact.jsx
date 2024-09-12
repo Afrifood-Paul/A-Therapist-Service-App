@@ -31,9 +31,9 @@ const NavbarContact = () => {
 
   const homeDropdownItems = [
     { label: "Home Page One", path: "/" },
-    { label: "Home Page Two", path: "/homepagetwo" },
-    { label: "Home Page Three", path: "/homepagethree" },
-    { label: "Home Page Four", path: "/homepagefour" },
+    { label: "Home Page Two", path: "/home-page-two" },
+    { label: "Home Page Three", path: "/home-page-three" },
+    { label: "Home Page Four", path: "/home-page-four" },
   ];
 
   const serviceDropdownItems = [
@@ -74,7 +74,7 @@ const NavbarContact = () => {
             <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
             <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
             <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
-            <NavLink to={"/contact"} className="text-sm font-semibold">
+            <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
             </NavLink>
           </div>

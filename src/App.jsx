@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
-import HomePageTwo from "./pages/HomePageTwo";
-import HomePageThree from "./pages/HomePageThree";
-import HomePageFour from "./pages/HomePageFour";
+import HomePageTwo from "./pages/HomePagetwo";
+import HomePageThree from "./pages/HomePagethree";
+import HomePageFour from "./pages/HomePagefour";
 import Services from "./pages/Services";
 import ServicesTwo from "./pages/ServicesTwo";
 import ServicesThree from "./pages/ServicesThree";

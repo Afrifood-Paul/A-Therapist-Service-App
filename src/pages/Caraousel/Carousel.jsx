@@ -10,6 +10,7 @@ import {
 import bg1 from "../../assets/slider3.jpg";
 import bg2 from "../../assets/slider1.jpg";
 import FlowerCrop from "../../assets/flowers-crop1.webp";
+import { Link } from "react-router-dom";
 
 const NextArrow = ({ onClick }) => (
   <button
@@ -73,9 +74,12 @@ const Carousel = () => {
                 Embark on a journey of self-discovery and emotional healing with
                 our expert therapists.
               </p>
+            <Link to ="/services">
+
               <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
                 Our Services
               </button>
+            </Link>
             </div>
           </div>
           <div className="absolute bottom-0 left-0">

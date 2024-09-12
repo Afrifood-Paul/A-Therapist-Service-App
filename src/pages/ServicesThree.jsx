@@ -1,13 +1,7 @@
 import { services } from "../constants/Services-Constant";
 import ServiceFooter from "../Services-Component/ServicesFooter";
-<<<<<<< HEAD
-import NavbarContact from "../components/NavbarContact";
-import Footer from "../components/Footer";
-import Flower from '../assets/flowers-crop-3-white.webp'
-=======
 
 import Flower from "../assets/flowers-crop-3-white.webp";
->>>>>>> origin/main
 import Header from "../Services-Component/Services-header";
 import NavbarContact from "../components/NavbarContact";
 import Footer from "../components/Footer";
@@ -62,13 +56,8 @@ const ServicesList = () => {
 const ServicesThree = () => {
   return (
     <>
-<<<<<<< HEAD
-      <div className="fixed bg-white top-0 w-full z-30">
-       <NavbarContact />
-=======
       <div className="sticky top-0 w-full z-30 bg-white">
         <NavbarContact/>
->>>>>>> origin/main
       </div>
       <Header />
       <ServicesList />
