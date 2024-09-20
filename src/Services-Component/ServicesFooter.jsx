@@ -9,8 +9,7 @@ export const ServiceFooter = () => {
           <Clock className="mb-4 text-5xl" />
           <h3 className="text-2xl font-semibold mb-3">Schedule Your Appointment Today!</h3>
           <div className="mb-6">
-            <p>Mon - Sat: 8AM - 9PM</p>
-            <p>Sunday: 10AM - 8PM</p>
+            <p>Please contact for details </p>
           </div>
         <Link to="/appointment">
           <button className="bg-[#457a60] text-sm text-white px-3 py-2 rounded-full font-medium hover:bg-[#284838] transition-colors duration-500">

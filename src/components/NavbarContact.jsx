@@ -129,7 +129,7 @@ const NavbarContact = () => {
           <NavLink to={"/aboutus"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             About Us
           </NavLink>
-          <NavLink to={"/Studycase"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink to={"/study-case"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
           </NavLink>
           <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">

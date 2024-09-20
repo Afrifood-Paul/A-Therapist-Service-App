@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import NavbarContact from "../components/NavbarContact";
 import { services } from "../constants/Services-Constant";
 import ServiceFooter from "../Services-Component/ServicesFooter";
+import { Link } from "react-router-dom";
 
 
 const CounselingCard = ({ title, description, image }) => {
@@ -16,9 +17,11 @@ const CounselingCard = ({ title, description, image }) => {
             <img src={Flower} alt="Flower" className="w-32" />
           </div>
           <div className="absolute inset-0 bg-gray-300 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+           <Link to='/study-case'>
             <button className="bg-[#5a9e7c] text-white px-5 py-3 rounded-full flex items-center font-bold text-sm">
               Read More
-            </button>
+            </button> 
+          </Link>
           </div>
         </div>
       </div>

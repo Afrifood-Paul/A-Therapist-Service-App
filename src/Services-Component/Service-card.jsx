@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ title, description, image, number }) => {
   return (
@@ -9,9 +10,11 @@ const ServiceCard = ({ title, description, image, number }) => {
       <span style={{ fontFamily: "Great Vibes, cursive" }} className="absolute top-4 right-4 text-2xl font-bold text-[#3eb307]">{number}</span>
       <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
       <p className="text-gray-500 text-sm font-poppins mt-2 mb-4">{description}</p>
-      <button className="bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
-        Read More
-      </button>
+      <Link to = "/study-case">
+        <button className="bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
+          Read More
+        </button>
+      </Link>
     </div>
   );
 };

@@ -59,7 +59,7 @@ const IndividualTherapy = () => (
     <ServiceCard
       image={IT}
       title="Navigating Identity"
-      description="Anxiety Treatment"
+      description="We offer highly effective one-on-one counseling that best suit our client’s needs and we do meet our clients where they are at."
     />
   </div>
 );
@@ -99,7 +99,7 @@ const AnxietyTreatment = () => (
     <ServiceCard
       image={AT}
       title="Overcoming Anxiety"
-      description="Anxiety Treatment"
+      description="At Open-Minded Services, you will learn how to navigate your emotions and understand what is holding you back. With the right therapy, you can implement coping skills that will help you live the life you want. You do not need to face these challenges alone; we are here to support you."
     />
   </div>
 );
@@ -109,7 +109,7 @@ const DepressionTherapy = () => (
     <ServiceCard
       image={DT}
       title="Overcoming Depression"
-      description="Depression Therapy"
+      description="Open-Minded Services will help you understand and address your emotions and how they might physically manifest. Gain balance, motivation, and confidence for long-term emotional well-being."
     />
   </div>
 );

@@ -11,7 +11,7 @@ export const services = [
   {
     id: 1,
     title: "Individual Therapy",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    description: "We offer highly effective one-on-one counseling that best suit our client’s needs and we do meet our clients where they are at.",
     image: IT,
   },
   {
@@ -29,19 +29,19 @@ export const services = [
   {
     id: 4,
     title: "Stress Management",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    description: "Do not let stress affect your daily life and activities, let us be.",
     image: StressM,
   },
   {
     id: 5,
     title: "Anxiety Treatment",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    description: "Are you experiencing a racing heart, or suffering from panic attacks, concern about your emotions, and consumed by your thoughts?...",
     image: AT,
   },
   {
     id: 6,
     title: "Depression Therapy",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    description: "Do you have difficulties with persistent sadness, struggling to get out of bed for work or to do things that you love doing?... ",
     image: DT,
   },
   
@@ -50,33 +50,33 @@ export const services = [
 export const  pricingPlans = [
     {
       title: "Individual Therapy",
-      price: 150,
+      price: 100,
       image: IT,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Free 10 minutes consultation ',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
       title: 'Couples Counseling',
-      price: 180,
+      price: 100,
       image: CC,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Free 10 minutes consultation  ',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
       title: "Career Counseling",
-      price: 190,
+      price: 100,
       image: CareerCou,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Free 10 minutes consultation  ',
       features: ['Personalized', 'Confidential', 'Effective']
     }
   ];
 export const faqitems =[
-   { question: "What kind of therapy services do you offer?", answer: "We provide a range of therapy services, including individual, couples, and group therapy sessions tailored to your needs" },
-    { question: "Do you offer online therapy options?", answer: "Yes, we offer virtual therapy sessions for your convenience and comfort, ensuring you can access support from anywhere." },
-    { question: "How can I schedule an appointment?", answer: "You can easily schedule an appointment by contacting our office via phone or email, or by filling out our online appointment request form." },
-    { question: "Are your services covered by insurance?", answer: "We accept a variety of insurance plans, and our team can help you navigate the process to ensure you receive the coverage you are entitled to." },
-    { question: "Do you offer specialized therapy for specific issues?", answer: "Our psychologists have expertise in various areas, such as anxiety, depression, trauma, and more, offering specialized therapy tailored to your unique needs." },
-    { question: "Can I choose my therapist?", answer: "We strive to match you with a therapist who best fits your preferences and needs, ensuring a strong therapeutic alliance for effective treatment." },
+   { question: "Is what I share confidential? ", answer: "Yes,everything shared in counseling is confidential and will not be shared, but it is required by law to report identified abuse/harm to a child under the age of 18 or if there is a reason to believe that a person's life may be in danger. At Open-Minded Service Center Inc.we abide by the Freedom of Information and Protection of Privacy Act (FOIP)." },
+    { question: "Do you diagnose? ", answer: "Unfortunately, we do not diagnose but we can do referrals to appropriate places if needed based on the individual’s needs." },
+    { question: "What’s the cost per session and how long is a session?", answer: "Our rate starts from $100 per session and a session could range from 50 to 60 minutes." },
+    { question: "Do you do direct billings?", answer: "Yes, we do direct billings to some insurance companies, we also provide receipts to clients for claims through their insurance company." },
+    { question: "Do you offer weekends or evening sessions?", answer: "Yes, but the appointment needs to be discussed." },
+    { question: "How do I book a session? ", answer: "You can call, email or fill out the questionnaire in the website and someone will reach out to you on the contact information you have provided." },
 ]
 export const cardData = [
     {
