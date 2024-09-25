@@ -12,7 +12,6 @@ import HomePageThree from "./pages/HomePagethree";
 import HomePageFour from "./pages/HomePagefour";
 import Services from "./pages/Services";
 import ServicesTwo from "./pages/ServicesTwo";
-import ServicesThree from "./pages/ServicesThree";
 import ServicesSingle from "./pages/ServicesSingle";
 import StudyCase from "./pages/StudyCase";
 import AboutUs from "./pages/AboutUs";
@@ -29,7 +28,6 @@ const router = createBrowserRouter(
       <Route path="home-page-four" element={<HomePageFour />} />
       <Route path="services" element={<Services />} />
       <Route path="services-two" element={<ServicesTwo />} />
-      <Route path="services-three" element={<ServicesThree />} />
       <Route path="service-single" element={<ServicesSingle />} />
       <Route path="study-case/*" element={<StudyCase />} />
       <Route path="about-us" element={<AboutUs />} />

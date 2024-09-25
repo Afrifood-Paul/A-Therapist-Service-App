@@ -19,7 +19,6 @@ const AboutUs = () => {
       </div>
       <AboutUsHeader />
       <WhoWeAre />
-      <StatsSection />
       <TeamSection />
       <VisionMission />
       <ServiceContactFooter />

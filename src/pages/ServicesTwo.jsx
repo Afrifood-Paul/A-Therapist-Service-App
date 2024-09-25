@@ -49,7 +49,7 @@ const CounselingServicesGrid = () => {
         </h2>
       </div>
 
-      <div className="grid mx-5 my-3  grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid mx-5 my-3  grid-cols-1 md:grid-cols-2 gap-6">
         {services.map((service, index) => (
           <CounselingCard key={index} {...service} />
         ))}

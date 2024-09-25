@@ -38,7 +38,6 @@ const Navbar = () => {
   const serviceDropdownItems = [
     { label: "Service Style 1", path: "/services" },
     { label: "Service Style 2", path: "/services-two" },
-    { label: "Service Style 3", path: "/services-three" },
     { label: "Service Single", path: "/service-single" },
     { label: "Appointment", path: "/appointment" },
   ];

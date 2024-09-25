@@ -11,37 +11,25 @@ export const services = [
   {
     id: 1,
     title: "Individual Therapy",
-    description: "We offer highly effective one-on-one counseling that best suit our client’s needs and we do meet our clients where they are at.",
+    description: "We offer highly effective one-on-one counseling that best suits our client’s needs, and we meet our clients where they are at. Whether you're navigating personal challenges, coping with past trauma, or seeking clarity in life transitions, individual therapy provides a safe and confidential space for you to explore your emotions. Our tailored approach ensures that your therapy sessions are focused on your unique experiences and goals",
     image: IT,
-  },
-  {
-    id: 2,
-    title: "Couples Counseling",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
-    image: CC,
-  },
-  {
-    id: 3,
-    title: "Career Counseling",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
-    image: CareerCou,
   },
   {
     id: 4,
     title: "Stress Management",
-    description: "Do not let stress affect your daily life and activities, let us be.",
+    description: "Is stress interfering with your daily life, leaving you feeling overwhelmed, exhausted, or unable to cope with the challenges you face? At Open-Minded Services, we understand how stress can manifest both physically and emotionally. Our stress management therapy is designed to help you identify the root causes of your stress, whether it stems from work, relationships, or personal pressures.",
     image: StressM,
   },
   {
     id: 5,
     title: "Anxiety Treatment",
-    description: "Are you experiencing a racing heart, or suffering from panic attacks, concern about your emotions, and consumed by your thoughts?...",
+    description: "Are you experiencing a racing heart, or suffering from panic attacks, concern about your emotions, and consumed by your thoughts? At Open-Minded Services, you will learn how to navigate your emotions and understand what is holding you back. With the right therapy, you can implement coping skills that will help you live the life you want. You do not need to face these challenges alone; we are here to support you.",
     image: AT,
   },
   {
     id: 6,
     title: "Depression Therapy",
-    description: "Do you have difficulties with persistent sadness, struggling to get out of bed for work or to do things that you love doing?... ",
+    description: "Do you have difficulties with persistent sadness, struggling to get out of bed for work or to do things that you love doing?  Open-Minded Services will help you understand and address your emotions and how they might physically manifest. Gain balance, motivation, and confidence for long-term emotional well-being.",
     image: DT,
   },
   
@@ -49,21 +37,21 @@ export const services = [
 
 export const  pricingPlans = [
     {
-      title: "Individual Therapy",
-      price: 100,
+      title: "Basic",
+      price: 0,
       image: IT,
       description: 'Free 10 minutes consultation ',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
-      title: 'Couples Counseling',
+      title: 'Advanced',
       price: 100,
       image: CC,
       description: 'Free 10 minutes consultation  ',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
-      title: "Career Counseling",
+      title: "Premium",
       price: 100,
       image: CareerCou,
       description: 'Free 10 minutes consultation  ',

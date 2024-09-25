@@ -14,7 +14,8 @@ const ServiceContactFooter = () => {
           <div className="flex flex-col  px-6 py-6 bg-[#83cc61] text-white">
             <MapPin className="mb-3" />
             <div>
-              <p>Virtual</p> 
+              <p>Virtual</p>
+              <p>fadipe.o@openmindedservices.com</p> 
             </div>
           </div>
           <div className="flex flex-col px-6 py-6 bg-[#e1ffd4]">
@@ -22,7 +23,6 @@ const ServiceContactFooter = () => {
             <div>
               <p>Yemi Fadipe</p>
               <p>780-884-1985</p>
-              <p>fadipe.o@openmindedservices.com</p>
             </div>
           </div>
         </div>
