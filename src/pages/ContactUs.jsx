@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import { FaAngleRight } from "react-icons/fa";
 import NavbarContact from "../components/NavbarContact";
 import { NavLink } from "react-router-dom";
-import office from "../assets/building.webp";
+import office from "../assets/office.jpg";
 import { ImLocation, ImLocation2 } from "react-icons/im";
 import { BiSolidMessage, BiSolidPhone, BiTime } from "react-icons/bi";
 import Footer from "../components/Footer";
@@ -46,7 +46,7 @@ const Contact = () => {
               <img
                 src={office}
                 alt=""
-                className="rounded-xl w-full object-cover"
+                className="rounded-xl w-full h-60 object-cover"
               />
 
               <p className="absolute bottom-0 left-20 lg:left-14 py-2 text-white font-medium">
@@ -56,25 +56,25 @@ const Contact = () => {
             <div className="flex flex-col gap-14 lg:gap-12 lg:mt-14">
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
-                  <ImLocation2 className="text-green-800" />
-                  <h1 className="text-lg font-semibold">Office Location</h1>
+                  {/* <ImLocation2 className="text-green-800" /> */}
+                  <h1 className="text-lg font-semibold">Please contact for details</h1>
                 </div>
-                <p className="text-gray-500">100 S Main St, Los Angeles, CA</p>
+                <p className="text-gray-500">Virtual Consultation</p>
               </div>
 
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
                   <BiSolidMessage className="text-green-800" />
-                  <h1 className="text-lg font-semibold">Send Message</h1>
+                  <h1 className="text-lg font-semibold">Email Us:</h1>
                 </div>
-                <p className="text-gray-500">Contact@open-minded.com</p>
+                <p className="text-gray-500">info@openminded.com</p>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
                   <BiSolidPhone className="text-green-800" />
                   <h1 className="font-semibold">Call Us Directly</h1>
                 </div>
-                <p className="text-gray-500 text-sm">+234 5655 6565</p>
+                <p className="text-gray-500 text-sm">+7808841985</p>
               </div>
             </div>
           </div>
@@ -133,9 +133,9 @@ const Contact = () => {
             <h2 className="text-2xl font-semibold mb-2">
               Schedule Your Appointment Today!
             </h2>
-            <p className="mb-4">
+            {/* <p className="mb-4">
               Mon - Sat: 8AM - 9PM <br /> Sunday: 10AM - 8PM
-            </p>
+            </p> */}
             <button className="bg-[#28744e] bg-opacity-35 py-2 px-4 rounded-full hover:bg-green-700 transition duration-300">
               Make Appointment
             </button>
@@ -143,7 +143,7 @@ const Contact = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1 bg-[#83cc61] flex flex-col items-center justify-center p-10 text-white">
+        {/* <div className="flex-1 bg-[#83cc61] flex flex-col items-center justify-center p-10 text-white">
           <div className="text-center">
             <div className="mb-4 flex items-center justify-center">
               <ImLocation className="text-5xl" />
@@ -156,7 +156,7 @@ const Contact = () => {
               Get Direction
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="">
         <Footer />

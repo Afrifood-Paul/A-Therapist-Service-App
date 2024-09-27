@@ -57,7 +57,7 @@ const Carousel = () => {
             <div className="hidden lg:block"></div>
             <div className=" px-5 lg:px-2 md:text-left">
               <p className="inline-block px-4 py-2 bg-gray-400 bg-opacity-50 rounded-full text-white text-sm md:text-lg lg:text-sm font-semibold">
-               Open-Minded
+                Open-Minded
               </p>
               <div className="flex-flex-col">
                 <h2 className="text-5xl  md:text-6xl font-medium text-white py-4 lg:py-3">
@@ -71,15 +71,14 @@ const Carousel = () => {
                 </span>
               </div>
               <p className="text-white text-lg md:text-xl lg:text-lg max-w-md">
-                Embark on a journey of self-discovery and emotional healing with
-                our expert therapists.
+                Embark on a journey of self-discovery, emotional healing and
+                chart your path to mental wellness.
               </p>
-            <Link to ="/services">
-
-              <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
-                Our Services
-              </button>
-            </Link>
+              <Link to="/services">
+                <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
+                  Our Services
+                </button>
+              </Link>
             </div>
           </div>
           <div className="absolute bottom-0 left-0">
@@ -119,12 +118,14 @@ const Carousel = () => {
                 </span>
               </div>
               <p className="text-white text-lg md:text-xl lg:text-lg max-w-md">
-                Embark on a journey of self-discovery and emotional healing with
-                our expert therapists.
+                Embark on a journey of self-discovery, emotional healing and
+                chart your path to mental wellness.
               </p>
-              <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
-                Our Services
-              </button>
+              <Link to="/services">
+                <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
+                  Our Services
+                </button>
+              </Link>
             </div>
           </div>
           <div className="absolute bottom-0 left-0">

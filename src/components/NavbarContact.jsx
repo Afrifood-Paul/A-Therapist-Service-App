@@ -30,10 +30,9 @@ const NavbarContact = () => {
   }, []);
 
   const homeDropdownItems = [
-    { label: "Home Page One", path: "/" },
-    { label: "Home Page Two", path: "/home-page-two" },
-    { label: "Home Page Three", path: "/home-page-three" },
-    { label: "Home Page Four", path: "/home-page-four" },
+    { label: "Open-Minded", path: "/" },
+    { label: "Personal Therapist", path: "/home-page-two" },
+    { label: "Find Answer", path: "/home-page-three" }
   ];
 
   const serviceDropdownItems = [
@@ -73,7 +72,7 @@ const NavbarContact = () => {
           <div className={`space-x-6 font-sans`}>
             <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
             <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
-            <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
+            {/* <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink> */}
             <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
             </NavLink>

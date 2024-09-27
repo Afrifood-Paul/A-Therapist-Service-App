@@ -3,7 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import IT from '../assets/2.webp'
 import CC from '../assets/5.webp'
 import CareerCou from '../assets/Career couseling.webp'
-import StressM from '../assets/Stress M.webp'
+import StressM from '../assets/stress.jpeg'
 import AT from '../assets/Anxiety.webp'
 import DT from '../assets/depression therapy.webp'
 import NavbarContact from '../components/NavbarContact';

@@ -31,9 +31,9 @@ const router = createBrowserRouter(
       <Route path="services-two" element={<ServicesTwo />} />
       <Route path="services-three" element={<ServicesThree />} />
       <Route path="service-single" element={<ServicesSingle />} />
-      <Route path="study-case/*" element={<StudyCase />} />
+      <Route path="study-case" element={<StudyCase />} />
       <Route path="about-us" element={<AboutUs />} />
-      <Route path="blog" element={<Blog />} />
+      {/* <Route path="blog" element={<Blog />} /> */}
       <Route path="contact-us" element={<ContactUs />} />
       <Route path="appointment" element={<Appointment />} />
     </>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BiLogoFacebook,
   BiLogoInstagram,
@@ -17,6 +17,24 @@ const Footer = () => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener, noreferrer");
   };
+
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const fullText = `
+    At Open-Minded Service Center Inc., we acknowledge that we are located on Treaty 6 
+    Territory, Métis Homelands, and Nations of Alberta Region 4. We acknowledge that this 
+    land is traditional of many First Nations such as Nehiyawak/Cree, Tsuut’ina, 
+    Niitsitapi/Blackfoot, Otipemisiwak/Métis, Nakota Sioux, Haudenosaunee/Iroquois, Déné, 
+    Anishinaabe/Ojibway/Saulteaux, Inuit, and many others. We continue to protect the land 
+    within the Edmonton region, recognize the importance of this land and continue the legacy 
+    of stewardship that has fostered this land since time ancient through the work that we do.`;
+
+  const shortText = fullText.slice(0, 155); // Show only the first 150 characters
+
   return (
     <footer className="bg-[#f6f8f9] pt-12 relative">
       <div className="w-[90%] mx-auto lg:w-[80%] lg:ms-16 text-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -24,11 +42,14 @@ const Footer = () => {
         <div className="lg:w-[80%] mb-8 lg:mb-0 col-span-2">
           <img src={logo} alt="Logo" className="mb-4" width={150} />
           <p className="text-gray-500 font-san leading-8">
-            At Open-Minded, we understand that life’s challenges can sometimes
-            feel overwhelming, and seeking support can be a daunting step.
-            That’s why our team of dedicated therapists is here to provide you
-            with the compassionate guidance and expert care you deserve.
+            {isExpanded ? fullText : `${shortText}...`}
           </p>
+          <button
+            className="bg-[#83cc61] text-white px-5 py-2 rounded-md focus:outline-none"
+            onClick={toggleReadMore}
+          >
+            {isExpanded ? "Read Less" : "Read More"}
+          </button>
         </div>
 
         {/* Company Links */}
@@ -36,22 +57,16 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Company</h3>
           <ul className="text-gray-600 space-y-2">
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Individual Therapy</NavLink>
+              <NavLink>Individual Counseling</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Couples Counseling</NavLink>
+              <NavLink>Stress</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Career Counseling</NavLink>
+              <NavLink>Anxiety</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Stress management</NavLink>
-            </li>
-            <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Anxiety Treatment</NavLink>
-            </li>
-            <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Depression Therapy</NavLink>
+              <NavLink>Depression</NavLink>
             </li>
           </ul>
         </div>
@@ -61,41 +76,41 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Our Services</h3>
           <ul className="text-gray-600 space-y-2">
             <li className="hover:text-[#83ec3d]">
-              <NavLink>About Us</NavLink>
+              <NavLink to={"/about-us"}>About Us</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Our Services</NavLink>
+              <NavLink to={"/services"}> Our Services</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Study Case</NavLink>
+              <NavLink to={"/study-case"}>Study Case</NavLink>
+            </li>
+            {/* <li className="hover:text-[#83ec3d] duration-300">
+              <NavLink to={"/blog"}>Blog</NavLink>
+            </li> */}
+            <li className="hover:text-[#83ec3d] duration-300">
+              <NavLink to={"/contact-us"}>Contact Us</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Blog</NavLink>
-            </li>
-            <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Contact Us</NavLink>
-            </li>
-            <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink>Testimonials</NavLink>
+              <NavLink to={"/appointment"}>Appointments</NavLink>
             </li>
           </ul>
         </div>
 
         {/* Contact Info */}
         <div className="w-full">
-          <div className="flex items-center gap-2 pb-2 lg:pb-4">
-            <ImLocation className="text-green-800 text-xl" />
-            <h3 className="text-lg font-semibold">Office Location</h3>
+          <div className="flex items-center gap-2 pb-2">
+            {/* <ImLocation className="text-green-800 text-xl" /> */}
+            <h3 className="text-lg font-semibold">Please contact for details</h3>
           </div>
           <p className="text-gray-600 text-xs lg:text-sm">
-            100 S Main St, Los Angeles, CA
+          Virtual Consultation
           </p>
 
           <div className="flex items-center gap-2 mt-6">
             <FaMessage className="text-green-800" />
-            <h3 className="text-lg font-semibold">Send a Message</h3>
+            <h3 className="text-lg font-semibold">Email Us</h3>
           </div>
-          <p className="text-gray-600 mb-4">Open-Minded@gmail.com</p>
+          <p className="text-gray-600 mb-4">info@openminded.com</p>
           <div className="flex space-x-4">
             <NavLink
               to={"#"}
@@ -136,7 +151,9 @@ const Footer = () => {
       <div className="border-t border-gray-300 mt-5 py-5">
         <div className="w-[90%] mx-auto flex flex-col lg:flex-row gap-3 items-center justify-between">
           <div className="text-gray-500 text-sm font-medium text-center lg:text-left">
-            <p>Copyright 2024 - Open-Minded Service Center-Developed by Placid</p>
+            <p>
+              Copyright 2024 - Open-Minded Service Center-Developed by Placid
+            </p>
           </div>
           <div className="flex gap-5 items-center text-gray-500 text-sm font-medium">
             <h2>Terms & Conditions</h2>

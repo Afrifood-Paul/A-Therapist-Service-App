@@ -1,7 +1,8 @@
-import IT from '../assets/2.webp'
-import CC from '../assets/5.webp'
-import CareerCou from '../assets/Career couseling.webp'
-import StressM from '../assets/Stress M.webp'
+import IT from '../assets/individual.webp'
+
+import CC from '../assets/anxietyy.webp'
+import CareerCou from '../assets/girldepressed.AVIF'
+import StressM from '../assets/stress.jpeg'
 import AT from '../assets/Anxiety.webp'
 import DT from '../assets/depression therapy.webp'
 
@@ -10,73 +11,73 @@ import DT from '../assets/depression therapy.webp'
 export const services = [
   {
     id: 1,
-    title: "Individual Therapy",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    title: "Individual Counseling",
+    description: "We offer highly effective one-on-one counseling that best suit our client’s needs and we do meet our clients where they are at.",
     image: IT,
   },
   {
     id: 2,
-    title: "Couples Counseling",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    title: "Anxiety",
+    description: "Are you experiencing a racing heart, or suffering from panic attacks, concern about your emotions, and consumed by your thoughts? At Open-Minded Services, you will learn how to navigate your emotions and understand what is holding you back. With the right therapy, you can implement coping skills that will help you live the life you want. You do not need to face these challenges alone; we are here to support you.",
     image: CC,
   },
   {
     id: 3,
-    title: "Career Counseling",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    title: "Depression",
+    description: "Do you have difficulties with persistent sadness, struggling to get out of bed for work or to do things that you love doing?  Open-Minded Services will help you understand and address your emotions and how they might physically manifest. Gain balance, motivation, and confidence for long-term emotional well-being.",
     image: CareerCou,
   },
   {
     id: 4,
-    title: "Stress Management",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+    title: "Stress",
+    description: "Do not let stress affect your daily life and activities, let us be",
     image: StressM,
   },
-  {
-    id: 5,
-    title: "Anxiety Treatment",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
-    image: AT,
-  },
-  {
-    id: 6,
-    title: "Depression Therapy",
-    description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
-    image: DT,
-  },
+  // {
+  //   id: 5,
+  //   title: "Anxiety Treatment",
+  //   description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+  //   image: AT,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Depression Therapy",
+  //   description: "Sint tempor consequat ad commodo nostrud occaecat ad nulla labore esse culpa non dolore pariatur fugiat.",
+  //   image: DT,
+  // },
   
 ];
 
 export const  pricingPlans = [
     {
-      title: "Individual Therapy",
-      price: 150,
+      title: "Basic",
+      price: 0,
       image: IT,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Enjoy a free 10-minute basic consultation to discover the right plan for your needs',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
-      title: 'Couples Counseling',
-      price: 180,
+      title: 'Advance',
+      price: 100,
       image: CC,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Unlock expert insights with our advanced consultation,your path to personalized solutions starts here!"',
       features: ['Personalized', 'Confidential', 'Effective']
     },
     {
-      title: "Career Counseling",
-      price: 190,
+      title: "Premium",
+      price: 100,
       image: CareerCou,
-      description: 'Dolor laborum ex ut labore officia cupidatat ullamco anim veniam sunt enim aliquip duis',
+      description: 'Experience the pinnacle of personalized care with our premium consultation—guaranteed comprehensive support',
       features: ['Personalized', 'Confidential', 'Effective']
     }
   ];
 export const faqitems =[
-   { question: "What kind of therapy services do you offer?", answer: "We provide a range of therapy services, including individual, couples, and group therapy sessions tailored to your needs" },
-    { question: "Do you offer online therapy options?", answer: "Yes, we offer virtual therapy sessions for your convenience and comfort, ensuring you can access support from anywhere." },
-    { question: "How can I schedule an appointment?", answer: "You can easily schedule an appointment by contacting our office via phone or email, or by filling out our online appointment request form." },
-    { question: "Are your services covered by insurance?", answer: "We accept a variety of insurance plans, and our team can help you navigate the process to ensure you receive the coverage you are entitled to." },
+   { question: "Is What I Share Confidential?", answer: "Yes, everything shared in counseling is confidential and will not be shared, but it is required by law to report identified abuse/harm to a child under the age of 18 or if there is a reason to believe that a person’s life may be in danger.At Open-Minded Service Center Inc., we abide by the Freedom of Information and Protection of Privacy Act (FOIP)." },
+    { question: "Do you diagnose?", answer: "Unfortunately, we do not diagnose but we can do referrals to appropriate places if needed based on the individual’s needs.Our rate starts from $100 per session and a session could range from 50 to 60 minutes." },
+    { question: "Do you do direct billings?", answer: "Yes, we do direct billings to some insurance companies, we also provide receipts to clients for claims through their insurance company." },
+    { question: "Do you offer weekends or evening sessions?", answer: "Yes, but the appointment needs to be discussed. " },
     { question: "Do you offer specialized therapy for specific issues?", answer: "Our psychologists have expertise in various areas, such as anxiety, depression, trauma, and more, offering specialized therapy tailored to your unique needs." },
-    { question: "Can I choose my therapist?", answer: "We strive to match you with a therapist who best fits your preferences and needs, ensuring a strong therapeutic alliance for effective treatment." },
+    { question: "How do i book a session?", answer: "You can call, email or fill out the questionnaire in the website and someone will reach out to you on the contact information you have provided. " },
 ]
 export const cardData = [
     {

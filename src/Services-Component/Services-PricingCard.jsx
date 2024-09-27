@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const PricingCard = ({ title, price, image, description, features }) => {
   const titleBackgroundColors = {
-    "Individual Therapy": "#5a9e7c",
-    "Couples Counseling": "#83cc61",
-    "Career Counseling": "#5a9e7c",
+    "Basic": "#5a9e7c",
+    "Advance": "#83cc61",
+    "Premium": "#5a9e7c",
   };
 
   

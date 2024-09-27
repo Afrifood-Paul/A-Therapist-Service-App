@@ -16,20 +16,20 @@ const ContactSection = () => {
     <div className="relative bg-[#5a9e7c] text-white">
       <div className="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-0 justify-between w-[80%] mx-auto items-center  lg:px-8 py-10">
         {/* Working Hours */}
-        <div className="flex flex-col items-left">
+        <div className="flex flex-col items-center">
           <BiTime className="text-4xl mr-4" />
           <div>
-            <p>Mon - Sat: 8AM - 9PM</p>
-            <p>Sunday: 10AM - 8PM</p>
+            <p>Please contact for details</p>
+           
           </div>
         </div>
 
         {/* Location */}
-        <div className="flex flex-col items-left">
+        <div className="flex flex-col items-center">
           <BiMap className="text-4xl mr-4" />
           <div>
-            <p>789 Elm Avenue</p>
-            <p>Brooklyn, NY 11201</p>
+            <p>Virtual Consultation</p>
+            {/* <p> consultation will take place online</p> */}
           </div>
         </div>
 
@@ -37,8 +37,8 @@ const ContactSection = () => {
         <div className="flex flex-col items-left">
           <BiPhone className="text-4xl mr-4" />
           <div>
-            <p>+929 333 9296</p>
-            <p>contact@mindthera.com</p>
+            <p>+7808841985</p>
+            <p>info@openminded.com</p>
           </div>
         </div>
 
@@ -51,29 +51,6 @@ const ContactSection = () => {
             Make Appointment
           </Link>
         </div>
-      </div>
-
-      {/* Images Section */}
-      <div className="flex flex-col lg:flex-row ">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative lg:w-[50%]"
-            onMouseEnter={() => setHoverIndex(index)}
-            onMouseLeave={() => setHoverIndex(null)}
-          >
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-             className="object-cover hover:scale-110 duration-500"
-            />
-            <FaPlus
-              className={`absolute top-[65%] left-[50%] transform -translate-x-1/2 text-white text-5xl transition-opacity duration-500 ${
-                hoverIndex === index ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          </div>
-        ))}
       </div>
     </div>
   );

@@ -1,20 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import { services } from "../../constants/Services-Constant";
 import Flower from "../../assets/flowers-crop-3-white.webp";
 import flowerCrop from "../../assets/flowers-crop-2.webp";
 
 const CounselingCard = ({ title, description, image }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Function to toggle the description
+  const toggleDescription = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  // Short description preview (adjust the number of characters as needed)
+  const shortDescription = description.slice(0, 99) + "...";
+
   return (
     <div>
       <div className="relative group overflow-hidden rounded-lg shadow-md bg-white">
         <div className="relative">
-          <img src={image} alt={title} className="w-full h-80 object-cover" />
+          <img src={image} alt={title} className="w-full h-80 object-cover border-4 border-green-500" />
           <div className="absolute top-2 right-2">
             <img src={Flower} alt="Flower" className="w-40" />
           </div>
           <div className="absolute inset-0 bg-gray-300 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <button className="bg-[#5a9e7c] text-white px-5 py-3 rounded-full flex items-center font-bold text-sm">
-              Read More
+            <button
+              className="bg-[#5a9e7c] text-white px-5 py-3 rounded-full flex items-center font-bold text-sm"
+              onClick={toggleDescription} // Trigger description toggle
+            >
+              {isExpanded ? "Show Less" : "Read More"}
             </button>
           </div>
         </div>
@@ -22,7 +35,7 @@ const CounselingCard = ({ title, description, image }) => {
       <div className="p-5">
         <h3 className="lg:text-xl font-san font-medium">{title}</h3>
         <p className="text-gray-400 font-medium font-serif leading-7 text-sm">
-          {description}
+          {isExpanded ? description : shortDescription}
         </p>
       </div>
     </div>
@@ -47,12 +60,13 @@ const Therapist = () => {
           </span>
         </h2>
         <p className="text-gray-500 w-full lg:w-[50%] mx-auto leading-7">
-          Qui culpa qui consequat officia cillum quis irure aliquip ut dolore
-          sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.
+          "We offer a range of therapies designed to support your mental and
+          emotional well-being. Our treatments are tailored to meet your unique
+          needs and help you find balance and peace."
         </p>
       </div>
 
-      <div className="grid mx-5 my-3  grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid mx-5 grid-cols-1 md:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <CounselingCard key={index} {...service} />
         ))}

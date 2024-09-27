@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Carousel from "./Caraousel/Carousel";
 import bg3 from "../assets/bg3.webp";
 import jaffery from "../assets/jaffery2.webp";
+import paul from "../assets/my profile.jpg"
 import StatsSection from "../components/Sections/StatsSections";
 import TeamSection from "../components/Sections/TeamSection";
 import ContactSection from "../components/Sections/ContactSection";
@@ -27,7 +28,7 @@ const Home = () => {
       </div>
 
       <div
-        className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] mt-[23rem] lg:mt-[12rem] xl:mt-14 bg-fixed"
+        className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] mt-[14rem] lg:mt-[12rem] xl:mt-14 bg-fixed"
         style={{ backgroundImage: `url(${bg3})` }}
       >
         {/* Content Container */}
@@ -40,19 +41,19 @@ const Home = () => {
                 alt="Jeffery Mussman"
                 className="lg:w-full w-66 lg:h-full rounded-full shadow-lg lg:bg-cover"
               />
-              <div className="py-2">
-                <p className="text-sm font-bold pb-2">Jeffery Mussman</p>
-                <p className="text-xs">Individual Therapy</p>
+              <div className="pt-2">
+                <p className="font-bold pb-2">Name:</p>
+                <p className="text-xs">details:</p>
               </div>
             </div>
 
             {/* Text Content */}
             <div>
               <p className="text-3xl leading-10 w-[90%] lg:w-full text-left md:text-xl lg:text-3xl font-semibold">
-                Mindthera is exceptional! Their psychologists are highly
-                professional and caring. The atmosphere is welcoming and
-                calming, and the staff provides outstanding support. Thank you,
-                Mindthera, for your excellent service!
+                Open-Minded Services Center is exceptional! Their psychologists
+                are highly professional and caring. The atmosphere is welcoming
+                and calming, and the staff provides outstanding support. Thank
+                you,Open-Minded Services Center, for your excellent service!
               </p>
             </div>
           </div>
@@ -60,7 +61,7 @@ const Home = () => {
       </div>
       <div>
         <Therapist />
-        <StatsSection />
+        {/* <StatsSection /> */}
         <TeamSection />
         <OurPackages />
         <ContactSection />

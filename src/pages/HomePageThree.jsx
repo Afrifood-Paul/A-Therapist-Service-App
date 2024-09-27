@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import bushes from "../assets/bushes.webp";
-import bgpage3 from "../assets/bgpage3.webp";
+import bgpage3 from "../assets/fadipe.jpg";
 import Footer from "../components/Footer";
 import MentalHealthTransfom from "./MentalHealthTransfom";
 
@@ -40,10 +40,10 @@ const HomePageThree = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-lg lg:text-base w-full sm:w-[90%] leading-6 sm:leading-7 mb-6 sm:Pb-8">
-              Lorem ipsum consequat ut mollit consequat ad reprehenderit sint in
-              consequat ex mollit ex adipisicing nulla in incididunt officia sit
-              nostrud culpa eu culpa commodo velit in ad cupidatat laboris in ut
-              sit.
+              Helping you find clarity and direction in life’s challenges. With
+              compassionate guidance, we help you explore the answers within
+              yourself. Discover personalized support through our expert
+              services to uncover the solutions that work best for you
             </p>
             <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300 mb-5">
               Our Services
@@ -51,7 +51,7 @@ const HomePageThree = () => {
           </div>
         </div>
         {/* Image of the therapist positioned below text */}
-        <div className="relative z-10 mt-6 lg:mt-0 xl:absolute xl:bottom-0 xl:right-28">
+        <div className="relative z-10 lg:hidden mt-6 lg:mt-0 xl:absolute xl:bottom-0 xl:right-28">
           <img
             src={bgpage3}
             alt="Therapist"
@@ -69,8 +69,8 @@ const HomePageThree = () => {
       <div className="mt-72 lg:mt-5">
         <ServiceProcess />
       </div>
-      <Team />
-      <StatsSection />
+      {/* <Team />
+      <StatsSection /> */}
       <FAQAndContactSection />
       <ContactSection />
       <Footer />

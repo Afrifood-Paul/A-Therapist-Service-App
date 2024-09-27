@@ -76,7 +76,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Images Section */}
-      <div className="flex flex-col lg:flex-row mt-32">
+      {/* <div className="flex flex-col lg:flex-row mt-32">
         {images.map((image, index) => (
           <div
             key={index}
@@ -96,7 +96,7 @@ const HowItWorks = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

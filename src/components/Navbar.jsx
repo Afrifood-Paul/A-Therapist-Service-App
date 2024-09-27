@@ -29,10 +29,9 @@ const Navbar = () => {
   }, []);
 
   const homeDropdownItems = [
-    { label: "Home Page One", path: "/" },
-    { label: "Home Page Two", path: "/home-page-two" },
-    { label: "Home Page Three", path: "/home-page-three" },
-    { label: "Home Page Four", path: "/home-page-four" },
+    { label: "Open-minded", path: "/" },
+    { label: "Personal Therapist", path: "/home-page-two" },
+    { label: "Find Answers", path: "/home-page-three" }
   ];
 
   const serviceDropdownItems = [
@@ -56,7 +55,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className={`hidden lg:flex space-x-6`}>
+        <nav className={`hidden lg:flex space-x-10`}>
           <Dropdown
             label="Home"
             items={homeDropdownItems}
@@ -74,13 +73,13 @@ const Navbar = () => {
             isScrolled={isScrolled}
           />
           <div
-            className={`space-x-6 font-sans ${
+            className={`space-x-10 font-sans ${
               isScrolled ? "text-black lg:text-black" : " lg:text-white"
             }`}
           >
             <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
             <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
-            <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink>
+            {/* <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink> */}
             <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
             </NavLink>
@@ -122,7 +121,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <nav className="lg:hidden w-full h-[85vh] mt-2 bg-[#222] text-white">
+        <nav className="lg:hidden w-full h-[100vh] mt-2 bg-[#222] text-white">
           <Dropdown
             label="Home"
             items={homeDropdownItems}
@@ -143,9 +142,9 @@ const Navbar = () => {
           <NavLink to={"/Studycase"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
           </NavLink>
-          <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          {/* <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
-          </NavLink>
+          </NavLink> */}
           <NavLink to={"/contact"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Contact
           </NavLink>

@@ -17,7 +17,7 @@ const OurPackage = () => {
               Our Package
             </h2>
             <h1 className="text-4xl font-semibold pb-5">
-              Pricing {" "}
+              Pricing{" "}
               <span
                 className="text-[#83cc61] text-4xl"
                 style={{ fontFamily: "Great Vibes, cursive" }}
@@ -26,9 +26,10 @@ const OurPackage = () => {
               </span>
             </h1>
             <p className="text-white w-full px-4 lg:w-[40%] mx-auto leading-7">
-              Qui culpa qui consequat officia cillum quis irure aliquip ut
-              dolore sit eu culpa ut irure nisi occaecat dolore adipisicing do
-              pariatur.
+              Explore our flexible pricing plans designed to meet your needs,
+              whether you're seeking individual therapy or comprehensive
+              treatment packages. We're here to support your journey toward
+              well-being at a price that's right for you.
             </p>
           </div>
         </header>

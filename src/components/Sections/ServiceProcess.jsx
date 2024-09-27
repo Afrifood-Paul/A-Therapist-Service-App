@@ -35,12 +35,12 @@ const ServiceProcess = () => {
 
   return (
     <section
-      className="relative py-20 text-white"
+      className="relative py-10 text-white"
       style={{ backgroundImage: `url(${bushes})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative text-center mb-10">
+      {/* <div className="relative text-center mb-10">
         <span className="bg-[#ebf8e1] text-[#000] py-1 px-4 rounded-md font-semibold">
           Services Process
         </span>
@@ -52,14 +52,14 @@ const ServiceProcess = () => {
           Qui culpa qui consequat officia cillum quis irure aliquip ut dolore
           sit eu culpa ut irure nisi occaecat dolore adipisicing do pariatur.
         </p>
-      </div>
-      <div className="w-[90%] lg:max-w-7xl relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      </div> */}
+      {/* <div className="w-[90%] lg:max-w-7xl relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {steps.map((step, index) => (
           <div
             key={index}
             className="flex flex-col items-center lg:flex-row lg:items-center"
           >
-            {/* Step Content */}
+          
             <div className="flex flex-col items-left">
               <div className="flex items-center mb-4">
                 <span className="bg-[#5a9e7c] text-white text-left py-1 px-4 rounded-xl font-semibold text-sm">
@@ -71,13 +71,13 @@ const ServiceProcess = () => {
                 {step.description}
               </p>
             </div>
-            {/* Arrow */}
+            
             {index < steps.length - 1 && (
               <FaArrowRight className="text-6xl hidden lg:block text-white lg:mx-6 mt-6 lg:-mt-40" />
             )}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Images Section */}
       {/* <div className="flex flex-col lg:flex-row mt-32">
