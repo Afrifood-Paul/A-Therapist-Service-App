@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 const PricingCard = ({ title, price, image, description, features }) => {
   const titleBackgroundColors = {
     "Basic": "#5a9e7c",
+<<<<<<< HEAD
     "Advance": "#83cc61",
+=======
+    "Advanced": "#83cc61",
+>>>>>>> b02b639256a15a712c180561ff70c8f73a93a10e
     "Premium": "#5a9e7c",
   };
 

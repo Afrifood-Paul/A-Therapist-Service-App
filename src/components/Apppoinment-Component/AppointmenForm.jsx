@@ -72,8 +72,6 @@ const AppointmentForm = () => {
                 >
                   <option className='text-gray-400 hover:bg-gray-500' value="">Select service</option>
                   <option value="Individual Therapy">Individual Therapy</option>
-                  <option value="Career Counseling">Career Counseling</option>
-                  <option value="Couples Counseling">Couples Counseling</option>
                   <option value="Anxiety Therapy">Anxiety Therapy</option>
                   <option value="Depression Therapy">Depression Therapy</option>
                   <option value="Stress Management">Stress Management</option>

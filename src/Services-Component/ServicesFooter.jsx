@@ -9,8 +9,9 @@ export const ServiceFooter = () => {
           <Clock className="mb-4 text-5xl" />
           <h3 className="text-2xl font-semibold mb-3">Schedule Your Appointment Today!</h3>
           <div className="mb-6">
-            <p>Mon - Sat: 8AM - 9PM</p>
-            <p>Sunday: 10AM - 8PM</p>
+            <p>Please contact for details </p>
+            <p>Yemi Fadipe</p>
+            <p>780-884-1985</p>
           </div>
         <Link to="/appointment">
           <button className="bg-[#457a60] text-sm text-white px-3 py-2 rounded-full font-medium hover:bg-[#284838] transition-colors duration-500">
@@ -20,14 +21,16 @@ export const ServiceFooter = () => {
         </div>
         <div className="flex flex-col items-center justify-center px-6 py-8 bg-[#83cc61] text-white text-center">
           <MapPin className="mb-4 text-3xl" />
-          <h3 className="text-2xl font-semibold mb-3">Visit Our Clinic</h3>
+          <h3 className="text-2xl font-semibold mb-3">Session Format</h3>
           <div className="mb-6">
-            <p>789 Elm Avenue</p>
-            <p>Brooklyn, NY 11201</p>
+            <p>Virtual</p>
+            <p>fadipe.o@openmindedservices.com</p> 
           </div>
-          <button className="bg-[#74b454] text-white text-sm px-3 py-2 rounded-full font-semibold hover:bg-[#4a8266] transition-colors duration-200">
-            Get Direction
+          <Link to="/appointment">
+          <button className="bg-[#457a60] text-sm text-white px-3 py-2 rounded-full font-medium hover:bg-[#284838] transition-colors duration-500">
+            Make Appointment
           </button>
+        </Link>
         </div>
       </div>
     </div>
