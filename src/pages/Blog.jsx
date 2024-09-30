@@ -3,13 +3,13 @@ import NavbarContact from "../components/NavbarContact";
 import { NavLink } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa";
 import Footer from "../components/Footer";
-import img2 from "../assets/img2.webp";
-import img1 from "../assets/Team1.webp";
-import img3 from "../assets/lady.webp";
-import img4 from "../assets/Team4.webp";
-import img5 from "../assets/couple3.webp";
-import img6 from "../assets/family.webp";
-import cardpic from "../assets/cardpic.jpg";
+// import img2 from "../assets/img2.jpeg";
+// import img1 from "../assets/Team1.jpg";
+// import img3 from "../assets/lady.jpg";
+// import img4 from "../assets/Team4.jpg";
+// import img5 from "../assets/couple3.jpg";
+// import img6 from "../assets/family.jpg";
+// import cardpic from "../assets/cardpic.jpg";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
 const Blog = () => {

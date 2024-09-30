@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 gap-5 my-20 w-[90%] lg:w-[80%] mx-auto">
+      <div className="grid lg:grid-cols-2 gap-5 my-20 w-[90%] lg:w-[85%] mx-auto">
         <div className="flex flex-col gap-5">
           <h2 className="bg-[#83cc61] bg-opacity-55 w-28 text-black font-sans text-xs font-semibold rounded-xl px-3 py-2">
             Contact Form
@@ -60,6 +60,7 @@ const Contact = () => {
                   <h1 className="text-lg font-semibold">Please contact for details</h1>
                 </div>
                 <p className="text-gray-500">Virtual Consultation</p>
+                <p>appointment@openmindedservices.com</p>
               </div>
 
               <div className="flex flex-col">
@@ -67,7 +68,7 @@ const Contact = () => {
                   <BiSolidMessage className="text-green-800" />
                   <h1 className="text-lg font-semibold">Email Us:</h1>
                 </div>
-                <p className="text-gray-500">info@openminded.com</p>
+                <p className="text-gray-500">info@openminded<br/>services.com</p>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">

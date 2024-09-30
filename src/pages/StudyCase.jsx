@@ -1,22 +1,17 @@
 
 import { Link, Route, Routes } from 'react-router-dom';
-import IT from '../assets/2.webp'
-<<<<<<< HEAD
-import CC from '../assets/5.webp'
-import CareerCou from '../assets/Career couseling.webp'
+import IT from '../assets/individual.jpg'
 import StressM from '../assets/stress.jpeg'
-=======
-import StressM from '../assets/Stress M.webp'
->>>>>>> b02b639256a15a712c180561ff70c8f73a93a10e
-import AT from '../assets/Anxiety.webp'
-import DT from '../assets/depression therapy.webp'
+
+import AT from '../assets/Anxietyy.jpg'
+import DT from '../assets/girldepressed.jpg'
 import NavbarContact from '../components/NavbarContact';
 import Footer from '../components/Footer';
 import StudyCaseHeader from '../components/StudyCase-Component/StudyCase-Header';
 
 // Sidebar Component
 const Sidebar = () => (
-  <div className="w-64 p-8 ">
+  <div className="lg:w-64 p-8 ">
     <nav>
       <Link to="/study-case" className="block py-2 text-green-600 font-semibold hover:text-green-800">
         All Services
@@ -40,7 +35,7 @@ const Sidebar = () => (
 // Service Card Component
 const ServiceCard = ({ image, title, description }) => (
   <div>
-    <div className=" rounded-lg overflow-hidden">
+    <div className=" rounded-lg overflow-hidden border-2 border-lime-600">
       <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url(${image})` }}></div>
     </div>
     <div className="font-poppins p-2">
@@ -142,7 +137,7 @@ const StudyCase = () => {
        <NavbarContact />
       </div>
       <StudyCaseHeader />
-      <div className="flex"> 
+      <div className="flex flex-col lg:flex-row"> 
         {/* Sidebar */}
         <Sidebar />
         

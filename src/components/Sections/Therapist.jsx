@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { services } from "../../constants/Services-Constant";
-import Flower from "../../assets/flowers-crop-3-white.webp";
-import flowerCrop from "../../assets/flowers-crop-2.webp";
+import Flower from "../../assets/flower-crop1.jpg";
+import flowerCrop from "../../assets/flowers-crop2.jpg";
 
 const CounselingCard = ({ title, description, image }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,9 +19,9 @@ const CounselingCard = ({ title, description, image }) => {
       <div className="relative group overflow-hidden rounded-lg shadow-md bg-white">
         <div className="relative">
           <img src={image} alt={title} className="w-full h-80 object-cover border-4 border-green-500" />
-          <div className="absolute top-2 right-2">
+          {/* <div className="absolute top-2 right-2">
             <img src={Flower} alt="Flower" className="w-40" />
-          </div>
+          </div> */}
           <div className="absolute inset-0 bg-gray-300 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button
               className="bg-[#5a9e7c] text-white px-5 py-3 rounded-full flex items-center font-bold text-sm"
@@ -66,7 +66,7 @@ const Therapist = () => {
         </p>
       </div>
 
-      <div className="grid mx-5 grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid mx-5 grid-cols-1 md:grid-cols-2 gap-6">
         {services.map((service, index) => (
           <CounselingCard key={index} {...service} />
         ))}

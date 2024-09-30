@@ -1,9 +1,9 @@
 import React from "react";
 import Team1 from "../../assets/fadipe.jpg";
 import Team4 from "../../assets/marypics.jpg";
-import flowerCrop from "../../assets/flower-crop2.webp";
+// import flowerCrop from "../../assets/flower-crop1.jpg";
 // import backgroundImage from "../../assets/slider2.jpg";
-import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi";
+// import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -84,7 +84,7 @@ const TeamSection = () => {
         ))}
       </div> */}
 
-      <div className="relative flex flex-wrap md:grid md:grid-cols-2 xl:flex justify-evenly mb-20 gap-16 lg:gap-0">
+      <div className="relative flex flex-wrap lg:flex justify-evenly mb-20 gap-16 lg:gap-0">
         {teamMembers.map((member, index) => (
           <div
             key={index}
@@ -111,13 +111,13 @@ const TeamSection = () => {
           </div>
         ))}
       </div>
-      <div className="absolute top-0 right-0 hidden md:block">
+      {/* <div className="absolute top-0 right-0 hidden md:block">
         <img
           src={flowerCrop}
           alt=""
           className="w-[400px] lg:w-[280px] xl:w-[400px]"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

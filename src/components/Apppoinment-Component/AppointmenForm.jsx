@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import AppointmentIMG from '../../assets/Appointment.webp'
+import AppointmentIMG from '../../assets/open-minded.jpg'
 
 const AppointmentForm = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -58,7 +58,7 @@ const AppointmentForm = () => {
           ></div>
 
           {/* Form Container */}
-          <div className="ml-auto shadow-lg w-2/3 bg-white rounded-lg p-10 relative z-10">
+          <div className="md:ml-auto w-full shadow-lg md:w-2/3 bg-white rounded-lg p-10 relative z-10">
             <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Select Service */}
               <div>

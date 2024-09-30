@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Carousel from "./Caraousel/Carousel";
-import bg3 from "../assets/bg3.webp";
-import jaffery from "../assets/jaffery2.webp";
-import paul from "../assets/my profile.jpg"
+import bg3 from "../assets/bg3.jpg";
+import jaffery from "../assets/jaffery2.jpg";
+import testimony from "../assets/test.jpg";
+// import paul from "../assets/my profile.jpg"
 import StatsSection from "../components/Sections/StatsSections";
 import TeamSection from "../components/Sections/TeamSection";
 import ContactSection from "../components/Sections/ContactSection";
@@ -33,17 +34,18 @@ const Home = () => {
       >
         {/* Content Container */}
         <div className="relative z-10 flex items-center justify-center h-full text-center text-white p-4">
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="flex flex-col md:flex-row md:items-center md:space-x-10 max-w-4xl mx-auto">
             {/* Profile Image */}
             <div className="flex flex-col justify-center md:block my-10 md:mb-0">
               <img
-                src={jaffery}
+                src={testimony}
                 alt="Jeffery Mussman"
-                className="lg:w-full w-66 lg:h-full rounded-full shadow-lg lg:bg-cover"
+                className="lg:w-[32rem] w-[20rem] h-full rounded-full shadow-lg lg:bg-cover"
               />
               <div className="pt-2">
-                <p className="font-bold pb-2">Name:</p>
-                <p className="text-xs">details:</p>
+                <p className="font-bold pb-2">Tols Onijingin</p>
               </div>
             </div>
 

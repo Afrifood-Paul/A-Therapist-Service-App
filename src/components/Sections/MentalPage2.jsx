@@ -1,10 +1,11 @@
 import React from "react";
-import img1 from "../../assets/img1.webp";
+// import img1 from "../../assets/img1.webp";
 import Fadipe from "../../assets/fadipe.jpg"
-import img2 from "../../assets/img2.webp";
-import img3 from "../../assets/img3.webp";
-import img4 from "../../assets/img4.webp";
-import leaf from "../../assets/leaf.webp";
+// import img2 from "../../assets/img2.webp";
+// import img3 from "../../assets/img3.webp";
+// import img4 from "../../assets/img4.webp";
+import { motion } from "framer-motion";
+import leaf from "../../assets/leaf.jpg";
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -13,13 +14,16 @@ const MentalPage2 = () => {
     <div className="w-[90%] lg:w-full xl:w-[80%] mx-auto xl:mt-10 h-full grid lg:grid-cols-2 gap-10">
       <div className="grid pt-8 lg:py-8 lg:px-8">
         <div className="flex justify-center items-center ">
-          <div >
+        <motion.div >
             <img
               src={Fadipe}
               alt="Woman in field"
               className="w-full h-[32rem] object-cover rounded-3xl border-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.9 }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 

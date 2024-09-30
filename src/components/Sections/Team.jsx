@@ -1,10 +1,10 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import img1 from "../../assets/img1.webp";
-import img2 from "../../assets/img2.webp";
-import img3 from "../../assets/img3.webp";
-import img4 from "../../assets/img4.webp";
-import leaf from "../../assets/leaf.webp";
+// import img1 from "../../assets/img1.webp";
+// import img2 from "../../assets/img2.webp";
+// import img3 from "../../assets/img3.webp";
+// import img4 from "../../assets/img4.webp";
+// import leaf from "../../assets/leaf.webp";
 
 const Team = () => {
   return (

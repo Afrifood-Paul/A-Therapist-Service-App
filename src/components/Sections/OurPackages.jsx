@@ -1,6 +1,6 @@
 import React from "react";
 import { pricingPlans } from "../../constants/Services-Constant";
-import backgroundImage from "../../assets/1.webp";
+import backgroundImage from "../../assets/bushes.jpg";
 import PricingCard from "../../Services-Component/Services-PricingCard";
 
 const OurPackage = () => {
@@ -34,7 +34,7 @@ const OurPackage = () => {
           </div>
         </header>
         <div className="lg:w-[80%] mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {pricingPlans.map((plan, index) => (
               <PricingCard key={index} {...plan} />
             ))}

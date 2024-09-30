@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Flower from "../assets/flowers-crop-2.webp";
+// import Flower from "../assets/flowers-crop2.jpg";
 import { FaAngleRight } from "react-icons/fa";
 
 const Header = () => {
@@ -17,9 +17,9 @@ const Header = () => {
           <p className="font-medium text-white">Services</p>
         </div>
       </div>
-      <div className="absolute top-20 py-16 -left-20 w-1/3">
+      {/* <div className="absolute top-20 py-16 -left-20 w-1/3">
         <img src={Flower} alt="Decorative flower" className="w-full" />
-      </div>
+      </div> */}
     </div>
   );
 };

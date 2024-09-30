@@ -8,7 +8,7 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import logo from "../assets/open-minded-logo.png";
-import contactFlower from "../assets/flowers-crop-3.webp";
+// import contactFlower from "../assets/flowers-crop3.jpg";
 import { ImLocation } from "react-icons/im";
 import { FaMessage } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
@@ -91,7 +91,17 @@ const Footer = () => {
               <NavLink to={"/contact-us"}>Contact Us</NavLink>
             </li>
             <li className="hover:text-[#83ec3d] duration-300">
-              <NavLink to={"/appointment"}>Appointments</NavLink>
+              <NavLink
+                to={"/appointment"}
+                // onClick={(e) => {
+                //   e.preventDefault();
+                //   openInNewTab(
+                //     "appointment@openmindedservices.com"
+                //   );
+                // }}
+              >
+                Appointments
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -100,17 +110,38 @@ const Footer = () => {
         <div className="w-full">
           <div className="flex items-center gap-2 pb-2">
             {/* <ImLocation className="text-green-800 text-xl" /> */}
-            <h3 className="text-lg font-semibold">Please contact for details</h3>
+            <h3 className="text-lg font-semibold">
+              Please contact for details
+            </h3>
           </div>
           <p className="text-gray-600 text-xs lg:text-sm">
-          Virtual Consultation
+            Virtual Consultation
           </p>
+          <NavLink
+            to="#"
+            onClick={(e) => {
+              window.location.href = "mailto:info@openmindedservices.com";
+              e.preventDefault(); // Prevent NavLink's default behavior
+            }}
+            className="text-gray-600 mb-4"
+          >
+            fadipe.o@openmindedservices.com
+          </NavLink>
 
           <div className="flex items-center gap-2 mt-6">
             <FaMessage className="text-green-800" />
             <h3 className="text-lg font-semibold">Email Us</h3>
           </div>
-          <p className="text-gray-600 mb-4">info@openminded.com</p>
+          <NavLink
+            to="#"
+            onClick={(e) => {
+              window.location.href = "mailto:info@openmindedservices.com";
+              e.preventDefault(); // Prevent NavLink's default behavior
+            }}
+            className="text-gray-600 mb-4"
+          >
+            info@openmindedservices.com
+          </NavLink>
           <div className="flex space-x-4">
             <NavLink
               to={"#"}
@@ -152,7 +183,15 @@ const Footer = () => {
         <div className="w-[90%] mx-auto flex flex-col lg:flex-row gap-3 items-center justify-between">
           <div className="text-gray-500 text-sm font-medium text-center lg:text-left">
             <p>
-              Copyright 2024 - Open-Minded Service Center-Developed by Placid
+              Copyright 2024 - Open-Minded Service Center-Developed by{" "}
+              <NavLink
+                onClick={(e) => {
+                  e.preventDefault();
+                  openInNewTab("https://placid.ng/");
+                }}
+              >
+                Placid
+              </NavLink>
             </p>
           </div>
           <div className="flex gap-5 items-center text-gray-500 text-sm font-medium">
@@ -161,13 +200,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <img
           src={contactFlower}
           alt=""
           className="w-60 absolute top-0 right-0"
         />
-      </div>
+      </div> */}
     </footer>
   );
 };

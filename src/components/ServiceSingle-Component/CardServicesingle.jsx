@@ -1,5 +1,5 @@
 import { cardData } from '../../constants/Services-Constant';
-import backgroundImage from '../../assets/3.webp'
+import backgroundImage from '../../assets/bushes.jpg'
 
 
 function CardContent({ title, content }) {

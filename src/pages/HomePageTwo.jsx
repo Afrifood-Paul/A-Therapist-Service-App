@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import bg4 from "../assets/marypics.jpg";
 import bg3 from "../assets/slider1.jpg";
-import bushes from "../assets/bushes.webp";
+import bushes from "../assets/bushes.jpg";
 import { FaPlay } from "react-icons/fa";
-import jaffery from "../assets/jaffery2.webp";
+import jaffery from "../assets/jaffery2.jpg";
+import testimony from "../assets/test.jpg";
 import { LuClock9, LuPhoneCall } from "react-icons/lu";
 import { SlLocationPin } from "react-icons/sl";
 import CountUp from "react-countup";
@@ -143,23 +144,28 @@ const HomePageTwo = () => {
           {/* <HowItWorks /> */}
           <FAQAndContactSection />
           <section>
-            <div
-              className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] bg-fixed"
-              style={{ backgroundImage: `url(${bushes})` }}
-            >
+            <div className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] bg-fixed">
+              {/* Blurred Background */}
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${bushes})` }}
+              ></div>
+
               {/* Content Container */}
               <div className="relative z-10 flex items-center justify-center h-full text-center text-white p-4">
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+
                 <div className="flex flex-col md:flex-row md:items-center md:space-x-10 max-w-4xl mx-auto">
                   {/* Profile Image */}
                   <div className="flex flex-col justify-center md:block my-10 md:mb-0">
                     <img
-                      src={jaffery}
+                      src={testimony}
                       alt="Jeffery Mussman"
-                      className="lg:w-full w-66 lg:h-full rounded-full shadow-lg lg:bg-cover"
+                      className="lg:w-[32rem] w-[12rem] rounded-full shadow-lg lg:bg-cover"
                     />
                     <div className="py-2">
-                      <p className="text-sm font-bold pb-2">Name</p>
-                      <p className="text-xs">----</p>
+                      <p className="text-sm font-bold pb-2">Tols Onijingin</p>
                     </div>
                   </div>
 

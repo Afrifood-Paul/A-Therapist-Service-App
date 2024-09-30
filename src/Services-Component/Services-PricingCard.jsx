@@ -3,16 +3,11 @@ import { Link } from "react-router-dom";
 
 const PricingCard = ({ title, price, image, description, features }) => {
   const titleBackgroundColors = {
-    "Basic": "#5a9e7c",
-<<<<<<< HEAD
-    "Advance": "#83cc61",
-=======
-    "Advanced": "#83cc61",
->>>>>>> b02b639256a15a712c180561ff70c8f73a93a10e
-    "Premium": "#5a9e7c",
+    Basic: "#5a9e7c",
+    Advanced: "#83cc61", 
+    Premium: "#5a9e7c",
   };
 
-  
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div
@@ -55,7 +50,7 @@ const PricingCard = ({ title, price, image, description, features }) => {
             </li>
           ))}
         </ul>
-        <Link to="/appointment" >
+        <Link to="/appointment">
           <button className="w-full font-semibold bg-gray-100 text-gray-600 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
             Make Appointment
           </button>

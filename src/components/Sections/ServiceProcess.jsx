@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaPlus } from "react-icons/fa";
-import bushes from "../../assets/bushes.webp";
+import bushes from "../../assets/bushes.jpg";
 
 const ServiceProcess = () => {
   const [hoverIndex, setHoverIndex] = useState(null);

@@ -36,9 +36,9 @@ const NavbarContact = () => {
   ];
 
   const serviceDropdownItems = [
-    { label: "Service Style 1", path: "/services" },
-    { label: "Service Style 2", path: "/services-two" },
-    { label: "Service Single", path: "/service-single" },
+    { label: "Therapist & Treatment", path: "/services" },
+    { label: "Services Offer", path: "/services-two" },
+    { label: "Services In Detail", path: "/service-single" },
     { label: "Appointment", path: "/appointment" },
   ];
 
@@ -130,10 +130,10 @@ const NavbarContact = () => {
           <NavLink to={"/study-case"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
           </NavLink>
-          <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          {/* <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
-          </NavLink>
-          <NavLink to={"/contact"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          </NavLink> */}
+          <NavLink to={"/contact-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Contact
           </NavLink>
         </nav>

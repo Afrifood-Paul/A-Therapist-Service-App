@@ -1,7 +1,7 @@
 
 const AboutUsHeader = () => {
   return (
-    <div className="relative bg-gradient-to-r from-[#5a9e7c] to-[#83cc61] text-white p-4">
+    <div className="relative bg-gradient-to-r from-[#5a9e7c] to-[#83cc61] text-white mt-16 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">About us</h1>
         <div className="text-sm font-semibold">

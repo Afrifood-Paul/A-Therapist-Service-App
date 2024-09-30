@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import bushes from "../assets/bushes.webp";
+import bushes from "../assets/bushes.jpg";
 import bgpage3 from "../assets/fadipe.jpg";
 import Footer from "../components/Footer";
 import MentalHealthTransfom from "./MentalHealthTransfom";

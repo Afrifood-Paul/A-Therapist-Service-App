@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaArrowRight, FaPlus } from "react-icons/fa";
-import family from "../../assets/family.webp";
-import couple from "../../assets/couple3.webp";
-import lady from "../../assets/lady.webp";
-import img1 from "../../assets/img1.webp";
-import img2 from "../../assets/img2.webp";
+// import { FaArrowRight, FaPlus } from "react-icons/fa";
+// import family from "../../assets/family.webp";
+// import couple from "../../assets/couple3.webp";
+// import lady from "../../assets/lady.webp";
+// import img1 from "../../assets/img1.webp";
+// import img2 from "../../assets/img2.webp";
 
 const HowItWorks = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
