@@ -18,7 +18,7 @@ function CardContent({ title, content }) {
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             {/* Content Cards */}
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+            <div className="relative z-10 grid grid-cols-2 md:grid-cols-3 gap-8 p-8">
                 {cardData.map((card, index) => (
                     <CardContent key={index} title={card.title} content={card.content} />
                 ))}

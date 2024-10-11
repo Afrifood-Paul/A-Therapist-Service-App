@@ -1,43 +1,87 @@
-import React from "react";
+
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { lazy, Suspense } from 'react';
+import Spinner from './components/Spinner/Spinner.component';
 
-import Home from "./pages/Home";
-import HomePageTwo from "./pages/HomePagetwo";
-import HomePageThree from "./pages/HomePageThree"
+// Lazy load all components
+const Home = lazy(() => import('./pages/Home'));
+const HomePageTwo = lazy(() => import('./pages/HomePagetwo'));
+const HomePageThree = lazy(() => import('./pages/HomePageThree'));
+const ServicesTwo = lazy(() => import('./pages/ServicesTwo'));
+const ServicesSingle = lazy(() => import('./pages/ServicesSingle'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
+const Appointment = lazy(() => import('./pages/Appointment'));
 
-import Services from "./pages/Services";
-import ServicesTwo from "./pages/ServicesTwo";
-import ServicesSingle from "./pages/ServicesSingle";
-import StudyCase from "./pages/StudyCase";
-import AboutUs from "./pages/AboutUs";
-// import Blog from "./pages/Blog";
-import ContactUs from "./pages/ContactUs";
-import Appointment from "./pages/Appointment";
-
+// Create routes with lazy-loaded components and Suspense for each route
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} />
-      <Route path="home-page-two" element={<HomePageTwo />} />
-      <Route path="home-page-three" element={<HomePageThree />} />
-      <Route path="services" element={<Services />} />
-      <Route path="services-two" element={<ServicesTwo />} />
-      <Route path="service-single" element={<ServicesSingle />} />
-      <Route path="study-case/*" element={<StudyCase />} />
-      <Route path="about-us" element={<AboutUs />} />
-      {/* <Route path="blog" element={<Blog />} /> */}
-      <Route path="contact-us" element={<ContactUs />} />
-      <Route path="appointment" element={<Appointment />} />
+      <Route
+        path="/"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <Home />
+          </Suspense>
+        }
+      />
+      <Route
+        path="home-page-two"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <HomePageTwo />
+          </Suspense>
+        }
+      />
+      <Route
+        path="home-page-three"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <HomePageThree />
+          </Suspense>
+        }
+      />
+      <Route
+        path="services-two"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <ServicesTwo />
+          </Suspense>
+        }
+      />
+      <Route
+        path="service-single"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <ServicesSingle />
+          </Suspense>
+        }
+      />
+      <Route
+        path="contact-us"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <ContactUs />
+          </Suspense>
+        }
+      />
+      <Route
+        path="appointment"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <Appointment />
+          </Suspense>
+        }
+      />
     </>
   )
 );
 
-
+// App component
 const App = () => <RouterProvider router={router} />;
 
 export default App;

@@ -52,7 +52,7 @@ const HomePageTwo = () => {
               culture of kindness, empathy, and understanding within our
               community.
             </p>
-            <Link to="/services">
+            <Link to="/services-two">
               <button className="mt-6 bg-[#5a9e7c] hover:bg-green-600 text-white py-2 px-5 rounded-full text-sm font-sans">
                 Our Services
               </button>
@@ -64,32 +64,17 @@ const HomePageTwo = () => {
           <div className="bg-[#83cc61] h-10 w-full"></div>
           <div className="bg-[#e1ffd4] h-10 w-full"></div>
         </section>
-        <section className="flex flex-col lg:flex-row items-center max-w-7xl mx-auto p-6 md:p-10">
-          {/* Image Section */}
-          <div className="flex-1 mb-8 md:mb-0">
-            <div className="relative">
-              <img
-                src={bg4}
-                alt="Psychology Professional"
-                className="rounded-xl shadow-lg h-[34rem]"
-              />
-              <button className="absolute inset-0 flex items-center justify-center">
-                {/* <div className="bg-[#83cc61] text-white p-4 rounded-full">
-                  <FaPlay size={30} />
-                </div> */}
-              </button>
-            </div>
-          </div>
-
+        <section className="flex flex-col lg:flex-row items-center pt-3  ">
+          
           {/* Text Section */}
           <div className="flex-1 text-left md:pt-10 lg:pt-0 lg:pl-10">
-            <div className="inline-block bg-[#e1ffd4] text-black font-semibold px-4 py-2 rounded-full mb-4">
+            <div className="inline-block bg-[#e1ffd4] text-black font-semibold px-4 py-2 mt-2 rounded-full mb-4">
               Who We Are
             </div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               Introducing Our Expert Psychology Professionals
             </h2>
-            <p className="text-gray-500 leading-7 font-san mb-8">
+            <p className="text-gray-400 text-xl font-san font-semibold leading-8 mb-5">
               Empowering minds, enriching lives. At Open-Minded Service Center
               Inc, we are dedicated to delivering exceptional counseling
               services, mental health support, and referrals with kindness,
@@ -99,14 +84,10 @@ const HomePageTwo = () => {
               power of open-mindedness, and we're committed to helping our
               clients achieve their full potential.
             </p>
-            <Link to="/about-us">
-              <button className="bg-[#83cc61] text-white font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition-colors">
-                About Us
-              </button>
-            </Link>
+           
           </div>
         </section>
-        <MentalHealthTransfom />
+        {/* <MentalHealthTransfom /> */}
         <section
           className="w-full bg-cover bg-center bg-fixed h-20"
           style={{ backgroundImage: `url(${bushes})` }}
@@ -140,9 +121,9 @@ const HomePageTwo = () => {
         </section>
         <div>
           <TeamSection />
-          <OurPackage />
+          {/* <OurPackage /> */}
           {/* <HowItWorks /> */}
-          <FAQAndContactSection />
+          {/* <FAQAndContactSection /> */}
           <section>
             <div className="relative bg-cover bg-center xl:bg-cover xl:bg-center lg:h-[400px] bg-fixed">
               {/* Blurred Background */}

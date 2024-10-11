@@ -1,42 +1,15 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { services } from "../../constants/Services-Constant";
-import Flower from "../../assets/flower-crop1.jpg";
-import flowerCrop from "../../assets/flowers-crop2.jpg";
 
-const CounselingCard = ({ title, description, image }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  // Function to toggle the description
-  const toggleDescription = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  // Short description preview (adjust the number of characters as needed)
-  const shortDescription = description.slice(0, 99) + "...";
+const CounselingCard = ({ image }) => {
+ 
 
   return (
     <div>
       <div className="relative group overflow-hidden rounded-lg shadow-md bg-white">
         <div className="relative">
-          <img src={image} alt={title} className="w-full h-80 object-cover border-4 border-green-500" />
-          {/* <div className="absolute top-2 right-2">
-            <img src={Flower} alt="Flower" className="w-40" />
-          </div> */}
-          <div className="absolute inset-0 bg-gray-300 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <button
-              className="bg-[#5a9e7c] text-white px-5 py-3 rounded-full flex items-center font-bold text-sm"
-              onClick={toggleDescription} // Trigger description toggle
-            >
-              {isExpanded ? "Show Less" : "Read More"}
-            </button>
-          </div>
+          <img src={image}  className="w-full h-80 object-cover border-4 border-green-500" />
         </div>
-      </div>
-      <div className="p-5">
-        <h3 className="lg:text-xl font-san font-medium">{title}</h3>
-        <p className="text-gray-400 font-medium font-serif leading-7 text-sm">
-          {isExpanded ? description : shortDescription}
-        </p>
       </div>
     </div>
   );
@@ -70,13 +43,6 @@ const Therapist = () => {
         {services.map((service, index) => (
           <CounselingCard key={index} {...service} />
         ))}
-      </div>
-      <div className="absolute -top-8 -left-40 hidden md:block">
-        <img
-          src={flowerCrop}
-          alt=""
-          className="w-[400px] lg:w-[280px] xl:w-[450px]"
-        />
       </div>
     </div>
   );

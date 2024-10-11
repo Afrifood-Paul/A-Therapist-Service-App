@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React, { useEffect, useState } from "react";
 import logo from "../assets/open-minded.jpg";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { MdHeadsetMic, MdOutlineMenu } from "react-icons/md";
 
 import DropdownContact from "./DropdownContact";
@@ -36,7 +36,7 @@ const NavbarContact = () => {
   ];
 
   const serviceDropdownItems = [
-    { label: "Therapist & Treatment", path: "/services" },
+    // { label: "Therapist & Treatment", path: "/services" },
     { label: "Services Offer", path: "/services-two" },
     { label: "Services In Detail", path: "/service-single" },
     { label: "Appointment", path: "/appointment" },
@@ -46,10 +46,11 @@ const NavbarContact = () => {
     <header className="py-2 shadow-md transition-colors duration-300">
       <div className="w-[95%] lg:w-full xl:w-[80%] mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="Open-Minded Logo" width={150} />
-        </div>
-
+        <Link to="/">
+          <div className="flex items-center space-x-2">
+            <img src={logo} alt="Open-Minded Logo" width={150} />
+          </div>
+        </Link>
         {/* Desktop Navigation */}
         <nav className={`hidden lg:flex space-x-6`}>
           <DropdownContact
@@ -69,8 +70,8 @@ const NavbarContact = () => {
             isScrolled={isScrolled}
           />
           <div className={`space-x-6 font-sans`}>
-            <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
-            <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
+            {/* <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
+            <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink> */}
             {/* <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink> */}
             <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
@@ -124,12 +125,12 @@ const NavbarContact = () => {
               setIsServiceDropdownOpen(!isServiceDropdownOpen)
             }
           />
-          <NavLink to={"/about-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          {/* <NavLink to={"/about-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             About Us
           </NavLink>
           <NavLink to={"/study-case"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
           </NavLink> */}

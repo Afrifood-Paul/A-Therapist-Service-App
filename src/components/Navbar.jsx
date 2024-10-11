@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React, { useEffect, useState } from "react";
 import logo from "../assets/open-minded-logo.png";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { MdHeadsetMic, MdOutlineMenu } from "react-icons/md";
 import Dropdown from "./Dropdown";
 
@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   const serviceDropdownItems = [
-    { label: "Therapist & Treatment", path: "/services" },
+    // { label: "Therapist & Treatment", path: "/services" },
     { label: "Services Offer", path: "/services-two" },
     { label: "Services In Detail", path: "/service-single" },
     { label: "Appointment", path: "/appointment" },
@@ -49,9 +49,11 @@ const Navbar = () => {
     >
       <div className="w-[95%] lg:w-full xl:w-[80%] mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="Open-Minded Logo" width={160} />
-        </div>
+        <Link to="/">
+          <div className="flex items-center space-x-2">
+            <img src={logo} alt="Open-Minded Logo" width={160} />
+          </div>
+        </Link>  
 
         {/* Desktop Navigation */}
         <nav className={`hidden lg:flex space-x-10`}>
@@ -76,8 +78,8 @@ const Navbar = () => {
               isScrolled ? "text-black lg:text-black" : " lg:text-white"
             }`}
           >
-            <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink>
-            <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink>
+            {/* <NavLink to={"/about-us"} className="text-sm font-semibold">About Us</NavLink> */}
+            {/* <NavLink to={"/study-case"} className="text-sm font-semibold">Study Case</NavLink> */}
             {/* <NavLink to={"/blog"} className="text-sm font-semibold">Blog</NavLink> */}
             <NavLink to={"/contact-us"} className="text-sm font-semibold">
               Contact
@@ -135,12 +137,12 @@ const Navbar = () => {
               setIsServiceDropdownOpen(!isServiceDropdownOpen)
             }
           />
-          <NavLink to={"/about-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          {/* <NavLink to={"/about-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             About Us
           </NavLink>
           <NavLink to={"/Study-case"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Study Case
-          </NavLink>
+          </NavLink> */}
           {/* <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
           </NavLink> */}

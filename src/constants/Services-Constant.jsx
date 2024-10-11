@@ -21,18 +21,7 @@ export const services = [
     description: "Are you experiencing a racing heart, or suffering from panic attacks, concern about your emotions, and consumed by your thoughts? At Open-Minded Services, you will learn how to navigate your emotions and understand what is holding you back. With the right therapy, you can implement coping skills that will help you live the life you want. You do not need to face these challenges alone; we are here to support you.",
     image: AT,
   },
-  {
-    id: 3,
-    title: "Depression Therapy",
-    description: "Do you have difficulties with persistent sadness, struggling to get out of bed for work or to do things that you love doing?  Open-Minded Services will help you understand and address your emotions and how they might physically manifest. Gain balance, motivation, and confidence for long-term emotional well-being.",
-    image: DT,
-  },
-  {
-    id: 4,
-    title: "Stress Management",
-    description: "Is stress interfering with your daily life, leaving you feeling overwhelmed, exhausted, or unable to cope with the challenges you face? At Open-Minded Services, we understand how stress can manifest both physically and emotionally. Our stress management therapy is designed to help you identify the root causes of your stress, whether it stems from work, relationships, or personal pressures.",
-    image: StressM,
-  },
+ 
   
   
 ];
@@ -47,7 +36,7 @@ export const  pricingPlans = [
     },
     {
       title: 'Advanced',
-      price: 130,
+      price: 100,
       image: DT,
       description: 'Unlock expert insights with our advanced consultation,your path to personalized solutions starts here!"',
       features: ['Personalized', 'Confidential', 'Effective']

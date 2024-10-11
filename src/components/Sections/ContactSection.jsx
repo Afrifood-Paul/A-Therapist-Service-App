@@ -38,7 +38,7 @@ const ContactSection = () => {
           <BiPhone className="text-4xl mr-4" />
           <div>
             <p>+7808841985</p>
-            <p>fadipe.o@openmindedservices.com</p>
+            <p>appointment@openmindedservices.com</p>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ const ContactSection = () => {
         <div>
           <Link
             to="/appointment"
-            className="bg-[#83cc61] text-white rounded-full px-6 py-3 font-sans text-sm "
+            className="bg-[#83cc61] text-white rounded-full px-6 mt-10 py-3 font-sans text-sm "
           >
             Make Appointment
           </Link>

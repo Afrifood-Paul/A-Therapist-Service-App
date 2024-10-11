@@ -24,7 +24,7 @@ export const ServiceFooter = () => {
           <h3 className="text-2xl font-semibold mb-3">Session Format</h3>
           <div className="mb-6">
             <p>Virtual</p>
-            <p>fadipe.o@openmindedservices.com</p> 
+            <p>info@openmindedservices.com</p> 
           </div>
           <Link to="/appointment">
           <button className="bg-[#457a60] text-sm text-white px-3 py-2 rounded-full font-medium hover:bg-[#284838] transition-colors duration-500">

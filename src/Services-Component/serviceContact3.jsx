@@ -15,7 +15,7 @@ const ServiceContactFooter = () => {
             <MapPin className="mb-3" />
             <div>
               <p>Virtual</p>
-              <p>fadipe.o@openmindedservices.com</p> 
+              <p>info@openmindedservices.com</p> 
             </div>
           </div>
           <div className="flex flex-col px-6 py-6 bg-[#e1ffd4]">

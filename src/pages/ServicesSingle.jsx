@@ -1,10 +1,12 @@
-import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
+
 import Header from "../Services-Component/Services-header";
 import NavbarContact from "../components/NavbarContact";
 import Footer from '../components/Footer';
 import ServiceContactFooter from "../Services-Component/serviceContact3";
 import Card from "../components/ServiceSingle-Component/CardServicesingle";
-import IndividualTherapy from "../components/ServiceSingle-Component/IndividualTherapy";
+
+import WPServices from "../Services-Component/WPserviceT";
+import ContactSection from "../components/Sections/ContactSection";
 
 const ServicesSingle = () => {
   return (
@@ -13,10 +15,8 @@ const ServicesSingle = () => {
         <NavbarContact />
       </div>
       <Header />
-      <IndividualTherapy />
+      <WPServices />
       <Card />
-      <FAQAndContactSection />
-      <ServiceContactFooter />
       <Footer />
     </>
   );
