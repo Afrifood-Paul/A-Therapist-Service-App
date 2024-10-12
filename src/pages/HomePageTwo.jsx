@@ -1,20 +1,20 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
-import bg4 from "../assets/marypics.jpg";
+// import bg4 from "../assets/marypics.jpg";
 import bg3 from "../assets/slider1.jpg";
 import bushes from "../assets/bushes.jpg";
-import { FaPlay } from "react-icons/fa";
-import jaffery from "../assets/jaffery2.jpg";
+// import { FaPlay } from "react-icons/fa";
+// import jaffery from "../assets/jaffery2.jpg";
 import testimony from "../assets/test.jpg";
-import { LuClock9, LuPhoneCall } from "react-icons/lu";
-import { SlLocationPin } from "react-icons/sl";
-import CountUp from "react-countup";
+// import { LuClock9, LuPhoneCall } from "react-icons/lu";
+// import { SlLocationPin } from "react-icons/sl";
+// import CountUp from "react-countup";
 import TeamSection from "../components/Sections/TeamSection";
 import Footer from "../components/Footer";
-import HowItWorks from "../components/Sections/HowItWorks";
-import MentalHealthTransfom from "./MentalHealthTransfom";
-import OurPackage from "../components/Sections/OurPackages";
-import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
+// import HowItWorks from "../components/Sections/HowItWorks";
+// import MentalHealthTransfom from "./MentalHealthTransfom";
+// import OurPackage from "../components/Sections/OurPackages";
+// import FAQAndContactSection from "../Services-Component/ServiceFaq.component";
 import { Link } from "react-router-dom";
 
 const HomePageTwo = () => {
@@ -53,7 +53,7 @@ const HomePageTwo = () => {
               community.
             </p>
             <Link to="/services-two">
-              <button className="mt-6 bg-[#5a9e7c] hover:bg-green-600 text-white py-2 px-5 rounded-full text-sm font-sans">
+              <button className="mt-6 bg-[#5a9e7c] hover:bg-green-600 text-white py-2 px-5 rounded-full text-md font-bold">
                 Our Services
               </button>
             </Link>

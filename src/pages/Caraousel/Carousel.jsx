@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
@@ -8,8 +7,8 @@ import {
   MdOutlineArrowBackIos,
 } from "react-icons/md";
 
-import bg1 from "../../assets/Therapy session.jpg";
-import bg2 from "../../assets/psychiatry-katies-way.png";
+import bg1 from "../../assets/slider3.jpg";
+import bg2 from "../../assets/slider1.jpg";
 // import FlowerCrop from "../../assets/flowers-crop-3-white.webp";
 import { Link } from "react-router-dom";
 
@@ -49,7 +48,7 @@ const Carousel = () => {
       id: 1,
       content: (
         <div
-          className="relative w-full h-screen bg-cover  bg-center"
+          className="relative w-full h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${bg2})` }}
         >
           {/* Overlay */}
@@ -124,7 +123,7 @@ const Carousel = () => {
 
               <Link to="/services-two">
                 <motion.button
-                  className="mt-6 px-5 py-2 bg-[#5a9e7c] text-white font-semibold rounded-full"
+                  className="mt-6 px-5 py-2 bg-[#5a9e7c] text-white font-semibold rounded-full hover:bg-green-600"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 50 }}
@@ -176,8 +175,8 @@ const Carousel = () => {
                 Embark on a journey of self-discovery, emotional healing and
                 chart your path to mental wellness.
               </p>
-              <Link to="/services-two">
-                <button className="mt-6 px-5 py-2 bg-[#5a9e7c] text-white font-semibold rounded-full ">
+              <Link to="/services">
+                <button className="mt-6 px-5 py-2 bg-[#5a9e7c] text-white font-semibold rounded-full hover:bg-green-600">
                   Our Services
                 </button>
               </Link>

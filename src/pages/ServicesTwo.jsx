@@ -5,6 +5,7 @@ import NavbarContact from "../components/NavbarContact";
 import TreatmentModalities from "../Services-Component/TreatmentModalities";
 import ContactSection from "../components/Sections/ContactSection";
 import TreatmentApproach from "../Services-Component/TreatmentApproach";
+import PricingComponent from "../Services-Component/Services-pricingComponent";
 
 // const CounselingCard = ({ title, description, image }) => {
 //   return (
@@ -76,7 +77,7 @@ const ServicesTwo = () => {
 
       <TreatmentApproach />
      </div>
-      <ContactSection />
+      <PricingComponent />
       <Footer />
     </div>
   );

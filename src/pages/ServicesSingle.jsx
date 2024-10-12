@@ -17,6 +17,7 @@ const ServicesSingle = () => {
       <Header />
       <WPServices />
       <Card />
+      <ContactSection />
       <Footer />
     </>
   );

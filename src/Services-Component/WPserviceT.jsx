@@ -2,7 +2,7 @@ import React from 'react';
 import { User, Users, Heart, Target, Smile, Sun } from 'lucide-react';  // Import Lucide icons
 
 const services = [
-  { name: 'Teen/Youth', description: 'Support and counseling for teens and youth.', icon: <User /> },
+  { name: 'Teen/Youth', description: 'Support and counseling for teens and youth.', icon: <User/>  },
   { name: 'Young Adults', description: 'Guidance and mentorship for young adults.', icon: <Target /> },
   { name: 'Adults', description: 'Counseling services for adults.', icon: <Users /> },
   { name: 'Seniors', description: 'Specialized care for seniors.', icon: <Smile /> },
@@ -24,8 +24,8 @@ const WPServices = () => {
               className="relative shadow-md rounded-lg p-6 text-center hover:shadow-lg transform transition-transform hover:scale-105 duration-300"
             >
               {/* Icon */}
-              <div className="flex justify-center items-center mb-4  text-[#5a9e7c]">
-                <div className="w-16 h-16">
+              <div className="flex justify-center  items-center mb-4  text-[#5a9e7c]">
+                <div className="w-16 h-16 ">
                   {service.icon}
                 </div>
               </div>
