@@ -1,8 +1,8 @@
 import IT from '../assets/individual.jpg'
 
-// import CC from '../assets/anxietyy.webp'
+
 import CareerCou from '../assets/girldepressed.jpg'
-import StressM from '../assets/stress.jpeg'
+
 import AT from '../assets/anxietyy.jpg'
 import DT from '../assets/girldepressed.jpg'
 
@@ -55,7 +55,7 @@ export const faqitems =[
     { question: "Do you do direct billings?", answer: "Yes, we do direct billings to some insurance companies, we also provide receipts to clients for claims through their insurance company." },
     { question: "Do you offer weekends or evening sessions?", answer: "Yes, but the appointment needs to be discussed. " },
     { question: "Do you offer specialized therapy for specific issues?", answer: "Our psychologists have expertise in various areas, such as anxiety, depression, trauma, and more, offering specialized therapy tailored to your unique needs." },
-    { question: "How do i book a session?", answer: "You can call, email or fill out the questionnaire in the website and someone will reach out to you on the contact information you have provided. " },
+    { question: "How do I book a session?", answer: "You can call, email or fill out the questionnaire in the website and someone will reach out to you on the contact information you have provided. " },
 ]
 export const cardData = [
     {
