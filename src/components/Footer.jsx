@@ -4,6 +4,7 @@ import {
   BiLogoInstagram,
   BiLogoPaypal,
   BiLogoTwitter,
+  BiLogoWhatsapp,
   BiLogoYoutube,
 } from "react-icons/bi";
 import logo from "../assets/open-minded-logo.png";
@@ -87,7 +88,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <SocialLink icon={BiLogoFacebook} url="https://www.facebook.com/profile.php?id=61552553109527&mibextid=ZbWKwL" openInNewTab={openInNewTab} />
               <SocialLink icon={BiLogoTwitter} url="#" openInNewTab={openInNewTab} />
-              <SocialLink icon={BiLogoPaypal} url="#" openInNewTab={openInNewTab} />
+              <SocialLink icon={BiLogoWhatsapp} url="https://wa.me/message/JD4FFQCSGIB6K1" openInNewTab={openInNewTab} />
               <SocialLink icon={BiLogoInstagram} url="https://www.instagram.com/openmindedservicecenter?igsh=dThndGNkMmVyOG43" openInNewTab={openInNewTab} />
               <SocialLink icon={BiLogoYoutube} url="#" openInNewTab={openInNewTab} />
             </div>

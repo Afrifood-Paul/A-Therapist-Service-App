@@ -85,7 +85,7 @@ const NavbarContact = () => {
             <MdHeadsetMic className=" lg:text-3xl xl:text-5xl text-[#5a9e7c]" />
             <div className={`flex flex-col items-center `}>
               <p className="text-xs">Need Help?</p>
-              <p className="font-bold">+7808841985</p>
+              <p className="font-bold text-sm">(780)-953-0173</p>
             </div>
           </div>
           <NavLink to="/appointment" className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold">

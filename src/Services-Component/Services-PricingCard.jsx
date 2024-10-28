@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const PricingCard = ({ title, price, image, description, features }) => {
   const titleBackgroundColors = {
-    "Basic": "#5a9e7c",
-    "Advanced": "#83cc61",
-    "Premium": "#5a9e7c",
+    "Payment": "#5a9e7c",
+    // "Advanced": "#83cc61",
+    // "Premium": "#5a9e7c",
   };
 
   
@@ -18,12 +18,12 @@ const PricingCard = ({ title, price, image, description, features }) => {
         <h3 className="text-white text-xl font-semibold">{title}</h3>
       </div>
       <div className="p-6">
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-center items-center mb-4">
           <div>
-            <p className="text-gray-500">Start from</p>
+            {/* <p className="text-gray-500">Start from</p> */}
             <p className="text-4xl font-semibold text-[#83cc61]">
-              ${price}
-              <span className="text-sm text-gray-500">/session</span>
+             
+              {/* <span className="text-sm text-gray-500">/session</span> */}
             </p>
           </div>
           <img
@@ -53,7 +53,7 @@ const PricingCard = ({ title, price, image, description, features }) => {
         </ul>
         <Link to="/appointment" >
           <button className="w-full font-semibold bg-gray-100 text-gray-600 py-2 rounded-full hover:bg-[#5a9e7c] hover:text-white transition">
-            Make Appointment
+           Contact Us For Details
           </button>
         </Link>
       </div>

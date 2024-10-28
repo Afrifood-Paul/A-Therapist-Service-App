@@ -28,26 +28,25 @@ export const services = [
 
 export const  pricingPlans = [
     {
-      title: "Basic",
-      price: 0,
+      title: "Payment",
       image: IT,
       description: 'Take advantage of a complimentary 10-minute consultation to find the perfect treatment plan tailored to your needs.',
       features: ['Personalized', 'Confidential', 'Effective']
     },
-    {
-      title: 'Advanced',
-      price: 100,
-      image: DT,
-      description: 'Unlock expert insights with our advanced consultation,your path to personalized solutions starts here!"',
-      features: ['Personalized', 'Confidential', 'Effective']
-    },
-    {
-      title: "Premium",
-      price: 160,
-      image: CareerCou,
-      description: 'Experience the pinnacle of personalized care with our premium consultation—guaranteed comprehensive support',
-      features: ['Personalized', 'Confidential', 'Effective']
-    }
+    // {
+    //   title: 'Advanced',
+    //   price: 100,
+    //   image: DT,
+    //   description: 'Unlock expert insights with our advanced consultation,your path to personalized solutions starts here!"',
+    //   features: ['Personalized', 'Confidential', 'Effective']
+    // },
+    // {
+    //   title: "Premium",
+    //   price: 160,
+    //   image: CareerCou,
+    //   description: 'Experience the pinnacle of personalized care with our premium consultation—guaranteed comprehensive support',
+    //   features: ['Personalized', 'Confidential', 'Effective']
+    // }
   ];
 export const faqitems =[
    { question: "Is What I Share Confidential?", answer: "Yes, everything shared in counseling is confidential and will not be shared, but it is required by law to report identified abuse/harm to a child under the age of 18 or if there is a reason to believe that a person’s life may be in danger.At Open-Minded Service Center Inc., we abide by the Freedom of Information and Protection of Privacy Act (FOIP)." },

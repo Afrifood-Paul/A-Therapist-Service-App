@@ -31,7 +31,7 @@ const Navbar = () => {
   const homeDropdownItems = [
     { label: "Open-minded", path: "/" },
     { label: "Personal Therapist", path: "/home-page-two" },
-    { label: "Find Answers", path: "/home-page-three" }
+    { label: "Find Answers", path: "/home-page-three" },
   ];
 
   const serviceDropdownItems = [
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Open-Minded Logo" width={160} />
           </div>
-        </Link>  
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className={`hidden lg:flex space-x-10`}>
@@ -97,10 +97,13 @@ const Navbar = () => {
               }`}
             >
               <p className="text-xs">Need Help?</p>
-              <p className="font-bold">+7808841985</p>
+              <p className="font-bold text-sm">(780)-953-0173</p>
             </div>
           </div>
-          <NavLink to="/appointment" className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold">
+          <NavLink
+            to="/appointment"
+            className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold"
+          >
             Make Appointment
           </NavLink>
         </div>
@@ -146,7 +149,10 @@ const Navbar = () => {
           {/* <NavLink to={"/blog"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
             Blog
           </NavLink> */}
-          <NavLink to={"/contact-us"} className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700">
+          <NavLink
+            to={"/contact-us"}
+            className="block py-3 px-2 md:px-5 font-semibold text-sm border-b border-gray-700"
+          >
             Contact
           </NavLink>
         </nav>

@@ -175,7 +175,7 @@ const Carousel = () => {
                 Embark on a journey of self-discovery, emotional healing and
                 chart your path to mental wellness.
               </p>
-              <Link to="/services">
+              <Link to="/services-two">
                 <button className="mt-6 px-5 py-2 bg-[#5a9e7c] text-white font-semibold rounded-full hover:bg-green-600">
                   Our Services
                 </button>

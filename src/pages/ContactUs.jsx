@@ -75,7 +75,7 @@ const Contact = () => {
                   <BiSolidPhone className="text-green-800" />
                   <h1 className="font-semibold">Call Us Directly</h1>
                 </div>
-                <p className="text-gray-500 text-sm">+7808841985</p>
+                <p className="text-gray-500 text-sm">(780)-953-0173</p>
               </div>
             </div>
           </div>

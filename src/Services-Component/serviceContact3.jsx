@@ -1,4 +1,4 @@
-import { Clock, MapPin, Phone } from 'lucide-react';
+import { Clock, MapPin, Phone, WorkflowIcon } from 'lucide-react';
 
 const ServiceContactFooter = () => {
   return (
@@ -18,6 +18,9 @@ const ServiceContactFooter = () => {
               <p>info@openmindedservices.com</p> 
             </div>
           </div>
+          {/* <div>
+            <WorkflowIcon />
+          </div> */}
           <div className="flex flex-col px-6 py-6 bg-[#e1ffd4]">
             <Phone className="mb-3" />
             <div>

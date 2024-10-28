@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 // import img1 from "../../assets/img1.webp";
 // import img2 from "../../assets/img2.webp";
 import { FaPlus } from "react-icons/fa";
+import { WorkflowIcon } from "lucide-react";
+import { MdWorkOutline } from "react-icons/md";
 
 const ContactSection = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -18,9 +20,9 @@ const ContactSection = () => {
         {/* Working Hours */}
         <div className="flex flex-col items-center">
           <BiTime className="text-4xl mr-4" />
-          <div>
+          <div className="text-center">
             <p>Please contact for details</p>
-           
+            <p>(780)-953-0173 <span className=" text-white font-semibold ">(Work)</span></p>
           </div>
         </div>
 
@@ -41,6 +43,13 @@ const ContactSection = () => {
             <p>appointment@openmindedservices.com</p>
           </div>
         </div>
+        {/* <div>
+          <div className="flex items-center gap-2">
+            <MdWorkOutline />
+            <p>Work Phone</p>
+          </div>
+          <p>(780)-953-0173</p>
+        </div> */}
 
         {/* Make Appointment Button */}
         <div>
