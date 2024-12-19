@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BiTime, BiMap, BiPhone } from "react-icons/bi";
+import { BiTime, BiMap, BiPhone, BiMessage } from "react-icons/bi";
 import { Link } from "react-router-dom";
 // import family from "../../assets/family.jpg";
 // import couple from "../../assets/couple3.webp";
@@ -19,10 +19,11 @@ const ContactSection = () => {
       <div className="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-0 justify-between mx-5 py-10">
         {/* Working Hours */}
         <div className="flex flex-col items-center">
-          <BiTime className="text-4xl mr-4" />
+          <BiPhone className="text-4xl mr-4" />
           <div className="text-center">
             <p>Please contact for details</p>
             <p>(780)-953-0173 <span className=" text-white font-semibold ">(Work)</span></p>
+            <p>(780)-884-1985</p>
           </div>
         </div>
 
@@ -36,20 +37,13 @@ const ContactSection = () => {
         </div>
 
         {/* Contact */}
-        <div className="flex flex-col items-left">
-          <BiPhone className="text-4xl mr-4" />
+        <div className="flex flex-col items-center">
+          <BiMessage className="text-4xl mr-4" />
           <div>
-            <p>+7808841985</p>
             <p>appointment@openmindedservices.com</p>
           </div>
         </div>
-        {/* <div>
-          <div className="flex items-center gap-2">
-            <MdWorkOutline />
-            <p>Work Phone</p>
-          </div>
-          <p>(780)-953-0173</p>
-        </div> */}
+        
 
         {/* Make Appointment Button */}
         <div>

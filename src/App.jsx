@@ -8,6 +8,7 @@ import {
 import { lazy, Suspense } from 'react';
 import Spinner from './components/Spinner/Spinner.component';
 
+
 // Lazy load all components
 const Home = lazy(() => import('./pages/Home'));
 const HomePageTwo = lazy(() => import('./pages/HomePagetwo'));
@@ -16,6 +17,8 @@ const ServicesTwo = lazy(() => import('./pages/ServicesTwo'));
 const ServicesSingle = lazy(() => import('./pages/ServicesSingle'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
 const Appointment = lazy(() => import('./pages/Appointment'));
+const Support = lazy(() => import('./pages/Support'));
+
 
 // Create routes with lazy-loaded components and Suspense for each route
 const router = createBrowserRouter(
@@ -30,7 +33,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="home-page-two"
+        path="personalTherapist"
         element={
           <Suspense fallback={<Spinner />}>
             <HomePageTwo />
@@ -38,7 +41,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="home-page-three"
+        path="findaswers"
         element={
           <Suspense fallback={<Spinner />}>
             <HomePageThree />
@@ -46,7 +49,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="services-two"
+        path="servicesoffer"
         element={
           <Suspense fallback={<Spinner />}>
             <ServicesTwo />
@@ -54,7 +57,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="service-single"
+        path="servicedetails"
         element={
           <Suspense fallback={<Spinner />}>
             <ServicesSingle />
@@ -74,6 +77,14 @@ const router = createBrowserRouter(
         element={
           <Suspense fallback={<Spinner />}>
             <Appointment />
+          </Suspense>
+        }
+      />
+      <Route
+        path="support"
+        element={
+          <Suspense fallback={<Spinner />}>
+           <Support />
           </Suspense>
         }
       />

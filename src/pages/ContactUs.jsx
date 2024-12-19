@@ -57,7 +57,9 @@ const Contact = () => {
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
                   {/* <ImLocation2 className="text-green-800" /> */}
-                  <h1 className="text-lg font-semibold">Please contact for details</h1>
+                  <h1 className="text-lg font-semibold">
+                    Please contact for details
+                  </h1>
                 </div>
                 <p className="text-gray-500">Virtual Consultation</p>
                 <p>appointment@openmindedservices.com</p>
@@ -68,7 +70,11 @@ const Contact = () => {
                   <BiSolidMessage className="text-green-800" />
                   <h1 className="text-lg font-semibold">Email Us:</h1>
                 </div>
-                <p className="text-gray-500">info@openminded<br/>services.com</p>
+                <p className="text-gray-500">
+                  info@openminded
+                  <br />
+                  services.com
+                </p>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2">
@@ -137,27 +143,16 @@ const Contact = () => {
             {/* <p className="mb-4">
               Mon - Sat: 8AM - 9PM <br /> Sunday: 10AM - 8PM
             </p> */}
-            <button className="bg-[#28744e] bg-opacity-35 py-2 px-4 rounded-full hover:bg-green-700 transition duration-300">
-              Make Appointment
-            </button>
+            <div className="">
+              <button className="bg-[#28744e] bg-opacity-35 py-2 px-4 rounded-full hover:bg-green-700 transition duration-300">
+                Make Appointment
+              </button>
+              
+            </div>
           </div>
         </div>
 
-        {/* Right Section */}
-        {/* <div className="flex-1 bg-[#83cc61] flex flex-col items-center justify-center p-10 text-white">
-          <div className="text-center">
-            <div className="mb-4 flex items-center justify-center">
-              <ImLocation className="text-5xl" />
-            </div>
-            <h2 className="text-2xl font-semibold mb-2">Visit Our Clinic</h2>
-            <p className="mb-4">
-              789 Elm Avenue <br /> Brooklyn, NY 11201
-            </p>
-            <button className="bg-lime-50 bg-opacity-35 py-2 px-4 rounded-full hover:bg-green-500 transition duration-300">
-              Get Direction
-            </button>
-          </div>
-        </div> */}
+       
       </div>
       <div className="">
         <Footer />

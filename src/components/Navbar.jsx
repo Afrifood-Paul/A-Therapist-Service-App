@@ -30,14 +30,14 @@ const Navbar = () => {
 
   const homeDropdownItems = [
     { label: "Open-minded", path: "/" },
-    { label: "Personal Therapist", path: "/home-page-two" },
-    { label: "Find Answers", path: "/home-page-three" },
+    { label: "Personal Therapist", path: "/personalTherapist" },
+    { label: "Find Answers", path: "/findaswers" },
   ];
 
   const serviceDropdownItems = [
     // { label: "Therapist & Treatment", path: "/services" },
-    { label: "Services Offer", path: "/services-two" },
-    { label: "Services In Detail", path: "/service-single" },
+    { label: "Services Offer", path: "/servicesoffer" },
+    { label: "Services In Detail", path: "/servicedetails" },
     { label: "Appointment", path: "/appointment" },
   ];
 
@@ -47,7 +47,7 @@ const Navbar = () => {
         isScrolled ? "bg-white" : "bg-inherit"
       }`}
     >
-      <div className="w-[95%] lg:w-full xl:w-[80%] mx-auto flex justify-between items-center">
+      <div className="w-[95%] lg:w-full xl:w-[90%] mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
           <div className="flex items-center space-x-2">
@@ -105,6 +105,12 @@ const Navbar = () => {
             className="bg-[#5a9e7c] text-sm  text-white px-3 py-2 rounded-full font-poppins font-semibold"
           >
             Make Appointment
+          </NavLink>
+          <NavLink
+            to="/support"
+            className="hover:bg-[#5a9e7c] text-sm  text-black px-3 py-2 rounded-full font-poppins font-semibold"
+          >
+           Need Support ?
           </NavLink>
         </div>
 

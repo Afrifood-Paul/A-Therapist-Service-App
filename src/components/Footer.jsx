@@ -9,7 +9,7 @@ import {
 } from "react-icons/bi";
 import logo from "../assets/open-minded-logo.png";
 import { FaMessage } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   const openInNewTab = (url) => {
@@ -53,7 +53,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <h3 className="text-lg font-semibold mb-4">Please contact for details</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              Please contact for details
+            </h3>
             <p className="text-gray-600 text-sm mb-2">Virtual Consultation</p>
             <NavLink
               to="#"
@@ -86,12 +88,33 @@ const Footer = () => {
           <div className="w-full lg:w-1/3 px-4 mb-8">
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <SocialLink icon={BiLogoFacebook} url="https://www.facebook.com/profile.php?id=61552553109527&mibextid=ZbWKwL" openInNewTab={openInNewTab} />
-              <SocialLink icon={BiLogoTwitter} url="#" openInNewTab={openInNewTab} />
-              <SocialLink icon={BiLogoWhatsapp} url="https://wa.me/message/JD4FFQCSGIB6K1" openInNewTab={openInNewTab} />
-              <SocialLink icon={BiLogoInstagram} url="https://www.instagram.com/openmindedservicecenter?igsh=dThndGNkMmVyOG43" openInNewTab={openInNewTab} />
-              <SocialLink icon={BiLogoYoutube} url="#" openInNewTab={openInNewTab} />
+              <SocialLink
+                icon={BiLogoFacebook}
+                url="https://www.facebook.com/profile.php?id=61552553109527&mibextid=ZbWKwL"
+                openInNewTab={openInNewTab}
+              />
+              <SocialLink
+                icon={BiLogoTwitter}
+                url="#"
+                openInNewTab={openInNewTab}
+              />
+              <SocialLink
+                icon={BiLogoWhatsapp}
+                url="https://wa.me/message/JD4FFQCSGIB6K1"
+                openInNewTab={openInNewTab}
+              />
+              <SocialLink
+                icon={BiLogoInstagram}
+                url="https://www.instagram.com/openmindedservicecenter?igsh=dThndGNkMmVyOG43"
+                openInNewTab={openInNewTab}
+              />
+              <SocialLink
+                icon={BiLogoYoutube}
+                url="#"
+                openInNewTab={openInNewTab}
+              />
             </div>
+
           </div>
         </div>
       </div>

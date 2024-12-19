@@ -55,31 +55,6 @@ const Carousel = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="absolute lg:w-[70%] lg:mx-auto grid grid-cols-1 lg:grid-cols-2 inset-0 items-center lg:ps-10">
             <div className="hidden lg:block"></div>
-            {/* <div className=" px-5 lg:px-2 md:text-left">
-              <p className="inline-block px-4 py-2 bg-gray-400 bg-opacity-50 rounded-full text-white text-sm md:text-lg lg:text-sm font-semibold">
-                Open-Minded
-              </p>
-              <div className="flex-flex-col">
-                <h2 className="text-5xl  md:text-6xl font-medium text-white py-4 lg:py-3">
-                  Begin Your <br />
-                </h2>
-                <span
-                  className="text-green-300 text-4xl md:text-6xl font-bold italic"
-                  style={{ fontFamily: "Great Vibes, cursive" }}
-                >
-                  Inner Peace Journey
-                </span>
-              </div>
-              <p className="text-white text-lg md:text-xl lg:text-lg max-w-md">
-                Embark on a journey of self-discovery, emotional healing and
-                chart your path to mental wellness.
-              </p>
-              <Link to="/services">
-                <button className="mt-6 px-5 py-2 bg-green-500 text-white font-semibold rounded-2xl hover:bg-green-600">
-                  Our Services
-                </button>
-              </Link>
-            </div> */}
             <div className="px-5 lg:px-2 md:text-left">
               <motion.p
                 className="inline-block px-4 py-2 bg-gray-400 bg-opacity-50 rounded-full text-white text-sm md:text-lg lg:text-sm font-semibold"
@@ -135,13 +110,7 @@ const Carousel = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="absolute bottom-0 left-0">
-            <img
-              src={FlowerCrop}
-              alt="flowercrop1"
-              className="bg-cover w-40 md:w-80 lg:w-[20rem] rotate-180"
-            />
-          </div> */}
+          
         </div>
       ),
     },
@@ -182,13 +151,7 @@ const Carousel = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="absolute bottom-0 left-0">
-            <img
-              src={FlowerCrop}
-              alt="flowercrop1"
-              className="bg-cover w-40 md:w-80 lg:w-[20rem] rotate-180"
-            />
-          </div> */}
+         
         </div>
       ),
     },
