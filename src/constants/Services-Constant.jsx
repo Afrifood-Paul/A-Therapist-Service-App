@@ -3,7 +3,7 @@ import IT from '../assets/individual.jpg'
 
 import CareerCou from '../assets/girldepressed.jpg'
 
-import AT from '../assets/anxietyy.jpg'
+import AT from '../assets/Anxietyy.jpg'
 import DT from '../assets/girldepressed.jpg'
 
 
