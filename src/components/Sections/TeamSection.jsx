@@ -1,5 +1,5 @@
 import React from "react";
-import Team1 from "../../assets/Fadipe";
+import Team1 from "../../assets/Fadipe.jpg";
 import Team4 from "../../assets/marypics.jpg";
 // import flowerCrop from "../../assets/flower-crop1.jpg";
 // import backgroundImage from "../../assets/slider2.jpg";
