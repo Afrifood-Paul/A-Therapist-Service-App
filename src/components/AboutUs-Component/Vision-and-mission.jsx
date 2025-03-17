@@ -22,7 +22,7 @@ const VisionMission = () => {
               seek support without stigma. We strive to be a leading provider of
               compassionate and inclusive counseling services, fostering a
               community where every person can achieve emotional well-being and
-              resilience.
+              resiliences.
             </p>
           </div>
 

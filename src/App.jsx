@@ -11,7 +11,7 @@ import Spinner from './components/Spinner/Spinner.component';
 
 // Lazy load all components
 const Home = lazy(() => import('./pages/Home'));
-const HomePageTwo = lazy(() => import('./pages/HomePagetwo'));
+const HomePageTwo = lazy(() => import('./pages/HomePageTwo'));
 const HomePageThree = lazy(() => import('./pages/HomePageThree'));
 const ServicesTwo = lazy(() => import('./pages/ServicesTwo'));
 const ServicesSingle = lazy(() => import('./pages/ServicesSingle'));
